@@ -41,7 +41,7 @@
   // First choice: The URL specified language.
   var param = location.search.match(/[?&]lang=([^&]+)/);
   var lang = param ? param[1].replace(/\+/g, '%20') : null;
-  if (window['BlocklyGamesLanguages'].indexOf(lang) != -1) {
+  if (window['BlocklyGamesLanguages'].indexOf(lang) !== -1) {
     // Save this explicit choice as cookie.
     var exp = (new Date(Date.now() + 2 * 31536000000)).toUTCString();
     document.cookie = 'lang=' + escape(lang) + '; expires=' + exp + 'path=/';
@@ -49,10 +49,10 @@
     // Second choice: Language cookie.
     var cookie = document.cookie.match(/(^|;)\s*lang=([\w\-]+)/);
     lang = cookie ? unescape(cookie[2]) : null;
-    if (window['BlocklyGamesLanguages'].indexOf(lang) == -1) {
+    if (window['BlocklyGamesLanguages'].indexOf(lang) === -1) {
       // Third choice: The browser's language.
       lang = navigator.language;
-      if (window['BlocklyGamesLanguages'].indexOf(lang) == -1) {
+      if (window['BlocklyGamesLanguages'].indexOf(lang) === -1) {
         // Fourth choice: English.
         lang = 'en';
       }
@@ -62,7 +62,7 @@
 
   // Load the chosen language pack.
   var script = document.createElement('script');
-  var debug = false;
+  var debug = true;
   // try {
   //   debug = !!sessionStorage.getItem('debug');
   //   if (debug) {

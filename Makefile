@@ -21,6 +21,10 @@ index-en:
 	$(SOY_COMPILER) --outputPathFormat appengine/index/generated/en/soy.js --srcs appengine/index/template.soy
 	python build-app.py index en
 
+energysource-en: common-en
+	$(SOY_COMPILER) --outputPathFormat appengine/energysource/generated/en/soy.js --srcs appengine/energysource/template.soy
+	python build-app.py energysource en
+
 puzzle-en: common-en
 	$(SOY_COMPILER) --outputPathFormat appengine/puzzle/generated/en/soy.js --srcs appengine/puzzle/template.soy
 	python build-app.py puzzle en
