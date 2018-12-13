@@ -54,13 +54,18 @@ Energysource.init = function () {
     var blocklyDiv = document.getElementById('blockly');
     let images = document.getElementById('images');
     // images.innerHTML = "<img style='float:left;' width=100 height=100 src='gallery/bulb.png'><img style='float:left;' width=100 height=100 src='gallery/bulb.png'><img style='float:left;' width=100 height=100 src='gallery/bulb.png'><img style='float:left;' width=100 height=100 src='gallery/bulb.png'>"
-    if (BlocklyGames.LEVEL==2){
+    if (BlocklyGames.LEVEL == 2) {
         images.innerHTML = "<img style='float:left;' width=100 height=100 src='gallery/batterygreen.png'>";
     }
-    else{
+    else {
 
         images.innerHTML = "<img style='float:left;' width=100 height=100 src='gallery/battery.png'>";
     }
+    images.innerHTML = images.innerHTML + "<div id='percentageValue' style='    position: fixed;\n" +
+        "    margin-left: 38px;\n" +
+        "    font-size: 31px;\n" +
+        "    font-family: \"Chicle\", cursive;\n" +
+        "    margin-top: -30px;'>0%</div>";
     var onresize = function (e) {
         blocklyDiv.style.width = (window.innerWidth - 20) + 'px';
         blocklyDiv.style.height =
@@ -147,6 +152,9 @@ Energysource.init = function () {
     }
 
     function handleEvents(event) {
+        if (event.type === Blockly.Events.BLOCK_MOVE) {
+            console.log(event.newCoordinate);
+        }
         if (event.type === Blockly.Events.BLOCK_MOVE &&
             event.newParentId !== event.oldParentId) {
             if (event.newParentId !== undefined && !Blockly.mainWorkspace.getBlockById(event.blockId).isCorrect()) {
@@ -169,8 +177,17 @@ Energysource.init = function () {
                 var action = BlocklyInterface.stopDialogKeyDown;
                 BlocklyDialogs.showDialog(content, button, true, true, style, action);
                 BlocklyDialogs.startDialogKeyDown();
+                block = Blockly.mainWorkspace.getBlockById(event.blockId);
+                block.setColor('#808080');
+                block.getParent().setColor('#808080');
             }
-            Energysource.checkAnswers()
+            else {
+                if (event.newParentId === undefined) {
+                    Blockly.mainWorkspace.getBlockById(event.blockId).setColor();
+                    Blockly.mainWorkspace.getBlockById(event.oldParentId).setColor();
+                }
+            }
+            setTimeout(Energysource.checkAnswers, 150);
         }
     }
 
@@ -191,9 +208,8 @@ Energysource.init = function () {
     // Preload the win sound.
     BlocklyGames.workspace.getAudioManager().load(
         ['energysource/win.mp3', 'energysource/win.ogg'], 'win');
-
     document.getElementsByClassName('blocklySvg')[0].style.backgroundImage = 'url("gallery/' + BlocklyGames.getMsgOrNull("Puzzle_background") + '")';
-    document.getElementsByClassName('blocklySvg')[0].style.backgroundSize = '100% 981px';
+    document.getElementsByClassName('blocklySvg')[0].style.backgroundSize = blocklyDiv.style.width + ' ' + blocklyDiv.style.height;
 };
 
 /**
@@ -218,17 +234,16 @@ Energysource.shuffle = function (arr) {
  * Count and highlight the errors.
  */
 Energysource.checkAnswers = function () {
-    var blocks = BlocklyGames.workspace.getAllBlocks();
+    var blocks = BlocklyGames.workspace.getAllBlocks(true);
     var errors = 0;
     var badBlocks = [];
     for (var b = 0, block; block = blocks[b]; b++) {
-        if (!block.isCorrect() && block.type != 'animal') {
+        if (!block.isCorrect() && block.type !== 'animal' && block.getColour()!=='#000000') {
             errors++;
             block.select();
             badBlocks.push(block);
         }
     }
-
     var graphValue = document.getElementById('graphValue');
 
     let percentage = 100;
@@ -266,19 +281,7 @@ Energysource.checkAnswers = function () {
     }
 
     if (badBlocks.length) {
-        // // Pick a random bad block and blink it until the dialog closes.
-        // Energysource.shuffle(badBlocks);
-        // var badBlock = badBlocks[0];
-        // var blink = function () {
-        //     badBlock.select();
-        //     if (BlocklyDialogs.isDialogVisible_) {
-        //         setTimeout(function () {
-        //             badBlock.unselect();
-        //         }, 150);
-        //         setTimeout(blink, 300);
-        //     }
-        // };
-        // blink();
+
     } else {
         setTimeout(Energysource.endDance, 2000);
         if (Blockly.selected) {
@@ -289,6 +292,7 @@ Energysource.checkAnswers = function () {
     // alert(percentage+"% have done correctly");
 
     let child = document.getElementById('images').children[0];
+    document.getElementById('percentageValue').innerText = percentage + '%';
     let picNum = Number.parseInt(percentage / 25);
     if (BlocklyGames.LEVEL === 2) {
         if (picNum === 0) {
@@ -386,22 +390,72 @@ Energysource.animate = function (block, angleOffset) {
     block.moveBy(dx, dy);
     setTimeout(Energysource.animate.bind(null, block, angleOffset), 50);
 };
-
+Energysource.FirstTime = true;
+Energysource.blinkBlocks = false;
 /**
  * Show the help pop-up.
  * @param {boolean} animate Animate the pop-up opening.
  */
 Energysource.showHelp = function (animate) {
-    var help = document.getElementById('help');
-    var button = document.getElementById('helpButton');
-    var style = {
-        width: '50%',
-        left: '25%',
-        top: '5em'
+
+    if (!Energysource.FirstTime) {
+        Energysource.blinkBlocks = true;
+        Energysource.BlinkBlocks();
+        setTimeout(function () {
+            Energysource.blinkBlocks = false;
+        }, 1500);
+
+    }
+    else {
+        var help = document.getElementById('help');
+        var button = document.getElementById('helpButton');
+        var style = {
+            width: '50%',
+            left: '25%',
+            top: '5em'
+        };
+        BlocklyDialogs.showDialog(help, button, animate, true, style,
+            BlocklyDialogs.stopDialogKeyDown);
+        BlocklyDialogs.startDialogKeyDown();
+        Energysource.FirstTime = false;
+    }
+};
+Energysource.BlinkBlocks = function () {
+
+    var blocks = BlocklyGames.workspace.getAllBlocks();
+    var errors = 0;
+    var badBlocks = [];
+    for (var b = 0, block; block = blocks[b]; b++) {
+        if (!block.isCorrect() && block.type != 'animal') {
+            errors++;
+            block.select();
+            badBlocks.push(block);
+        }
+    }
+
+    Energysource.shuffle(badBlocks);
+    var badBlock = badBlocks[0];
+    var animalBlock = null;
+    for (var b = 0, block; block = blocks[b]; b++) {
+        if (block.type === 'animal' && block.answer === badBlock.answer && block.getChildren().length === 0) {
+            animalBlock = block;
+            break;
+        }
+    }
+
+    var blinkAnimal = function () {
+        animalBlock.select();
+        badBlock.unselect();
+        if (Energysource.blinkBlocks) {
+            setTimeout(function () {
+                animalBlock.unselect();
+                badBlock.select();
+            }, 150);
+            setTimeout(blinkAnimal, 300);
+        }
     };
-    BlocklyDialogs.showDialog(help, button, animate, true, style,
-        BlocklyDialogs.stopDialogKeyDown);
-    BlocklyDialogs.startDialogKeyDown();
+    blinkAnimal();
+
 };
 
 window.addEventListener('load', Energysource.init);

@@ -71,10 +71,12 @@ Blockly.Blocks['animal'] = {
      * @this Blockly.Block
      */
     domToMutation: function (xmlElement) {
-        this.populate(parseInt(xmlElement.getAttribute('animal'), 10));
+        this.n = parseInt(xmlElement.getAttribute('animal'), 10);
+        this.populate(this.n);
     },
     animal: 0,
     answer: '',
+    n : 0,
     /**
      * Set the animal.
      * @this Blockly.Block
@@ -83,7 +85,7 @@ Blockly.Blocks['animal'] = {
         this.animal = n;
         this.answer = BlocklyGames.getMsgOrNull('Puzzle_answer' + n);
         this.setFieldValue(BlocklyGames.getMsg('Puzzle_animal' + n) === "--" ? "" : BlocklyGames.getMsg('Puzzle_animal' + n), 'NAME');
-        this.setColour(BlocklyGames.getMsgOrNull('Puzzle_block' + n + '_color'));
+        this.setColor();
         // this.setColour('');
         this.helpUrl = BlocklyGames.getMsg('Puzzle_animal' + n + 'HelpUrl');
         this.setMovable(false);
@@ -91,16 +93,32 @@ Blockly.Blocks['animal'] = {
         this.setPosition(n);
     },
 
-    setPosition: function (n) {
-        let x = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'xPos');
-        let y = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'yPos');
+    setColor: function(color=null){
+        if (color==null){
+            color = BlocklyGames.getMsgOrNull('Puzzle_block' + this.animal + '_color');
+        }
+        this.setColour(color);
+    },
 
-        this.moveBy(x == null ? 1700 : x, y == null ? 500: y);
+    setPosition: function (n) {
+        let percentageX = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'xPos');
+        let percentageY = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'yPos');
+
+        if (percentageX < 1 && percentageY < 1) {
+            var divBlockly = document.getElementById('blockly');
+            let x = divBlockly.style.width.replace('px', '');
+            let y = divBlockly.style.height.replace('px', '');
+            this.moveBy(percentageX == null ? 300 : x * percentageX, percentageY == null ? 500 : percentageY * y);
+        }
+        else {
+            this.moveBy(percentageX == null ? 300 : percentageX, percentageY == null ? 500 : percentageY);
+
+        }
     },
 
 
-    getWeightage: function(){
-        return BlocklyGames.getMsgOrNull('Puzzle_weight'+this.animal);
+    getWeightage: function () {
+        return BlocklyGames.getMsgOrNull('Puzzle_weight' + this.animal);
     },
     /**
      * Evaluate the correctness of this block.
@@ -118,7 +136,7 @@ Blockly.Blocks['picture'] = {
      * @this Blockly.Block
      */
     init: function () {
-        this.setColour(Energysource.Blocks.PICTURE_HUE);
+        this.setColor();
         this.appendDummyInput('PIC');
         // this.setOutput(true);
         this.setPreviousStatement(true);
@@ -143,22 +161,24 @@ Blockly.Blocks['picture'] = {
         this.setPosition(n);
     },
 
+    setColor: function(color=Energysource.Blocks.PICTURE_HUE){
+        this.setColour(color);
+    },
 
     setPosition: function (n) {
         let x = BlocklyGames.getMsgOrNull('Puzzle_power' + n + 'PicxPos');
         let y = BlocklyGames.getMsgOrNull('Puzzle_power' + n + 'PicyPos');
 
-        this.moveBy(x == null ? 1330 : x, y == null ? 10 : y);
+        this.moveBy(x == null ? 985 : x, y == null ? 10 : y);
     },
-    getWeightage: function(){
-        return BlocklyGames.getMsgOrNull('Puzzle_weight'+this.animal);
+    getWeightage: function () {
+        return BlocklyGames.getMsgOrNull('Puzzle_weight' + this.animal);
     },
     /**
      * Evaluate the correctness of this block.
      * @this Blockly.Block
      */
     isCorrect: function () {
-
         var parent = this.getParent();
         return parent && (parent.answer === this.answer);
     }
