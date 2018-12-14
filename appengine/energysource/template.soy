@@ -14,9 +14,11 @@
  * Translated messages for use in JavaScript.
  */
 {template .messages}
+    {call BlocklyGames.soy.messages /}
+
     <div style="display: none">
         {if $ij.level == 1}
-              <span id="Puzzle_background">bg.jpg</span>
+            <span id="Puzzle_background">bg.jpg</span>
             <span id="Puzzle_animal1">
                 {{msg meaning="Puzzle.animal1" desc="Duck: The bird.\n{lb}{lb}Identical|Duck{rb}{rb}"}}
                     --
@@ -152,9 +154,9 @@
             <span id="Puzzle_weight1">30</span>
             <span id="Puzzle_animal1Pic">wind.png</span>
             <span id="Puzzle_block1_color">#344a10</span>
-            <span id="Puzzle_animal1xPos">329</span>
-            <span id="Puzzle_animal1yPos">700</span>
-            <span id="Puzzle_power1PicxPos">1200</span>
+            <span id="Puzzle_animal1xPos">0.4116777531411678</span>
+            <span id="Puzzle_animal1yPos">0.5103163686382393</span>
+            <span id="Puzzle_power1PicxPos">834</span>
             <span id="Puzzle_power1PicyPos">10</span>
             <span id="Puzzle_animal1PicHeight">70</span>
             <span id="Puzzle_animal1PicWidth">100</span>
@@ -181,9 +183,9 @@
             <span id="Puzzle_weight2">30</span>
 
             <span id="Puzzle_block2_color">#616662</span>
-            <span id="Puzzle_animal2xPos">580</span>
-            <span id="Puzzle_animal2yPos">480</span>
-            <span id="Puzzle_power2PicxPos">1200</span>
+            <span id="Puzzle_animal2xPos">0.6378418329637842</span>
+            <span id="Puzzle_animal2yPos">0.4704264099037139</span>
+            <span id="Puzzle_power2PicxPos">834</span>
             <span id="Puzzle_power2PicyPos">10</span>
             <span id="Puzzle_animal2PicHeight">70</span>
             <span id="Puzzle_animal2PicWidth">100</span>
@@ -203,9 +205,9 @@
             <span id="Puzzle_answer3">winds</span>
             <span id="Puzzle_weight3">30</span>
 
-            <span id="Puzzle_animal3xPos">1200</span>
-            <span id="Puzzle_animal3yPos">750</span>
-            <span id="Puzzle_power3PicxPos">1200</span>
+            <span id="Puzzle_animal3xPos">0.1906873614190687</span>
+            <span id="Puzzle_animal3yPos">0.5653370013755158</span>
+            <span id="Puzzle_power3PicxPos">834</span>
             <span id="Puzzle_power3PicyPos">10</span>
             <span id="Puzzle_block3_color">#161d20</span>
             <span id="Puzzle_animal3PicHeight">70</span>
@@ -217,19 +219,19 @@
                 {/msg}
             </span>
 
-
+         //4th block
             <span id="Puzzle_animal4">
-                {{msg meaning="Puzzle.animal4" desc="Snail: The animal.\n{lb}{lb}Identical|Snail{rb}{rb}"}}
-                    --
-                {{/msg}}
-            </span>
+            {{msg meaning="Puzzle.animal4" desc="Snail: The animal.\n{lb}{lb}Identical|Snail{rb}{rb}"}}
+                --
+            {{/msg}}
+        </span>
             <span id="Puzzle_animal4Pic">hydro.jpg</span>
             <span id="Puzzle_answer4">water</span>
             <span id="Puzzle_weight4">10</span>
             <span id="Puzzle_block4_color">#737576</span>
-            <span id="Puzzle_animal4xPos">1700</span>
-            <span id="Puzzle_animal4yPos">500</span>
-            <span id="Puzzle_power4PicxPos">1330</span>
+            <span id="Puzzle_animal4xPos">0.0864745011086475</span>
+            <span id="Puzzle_animal4yPos">0.7386519944979367</span>
+            <span id="Puzzle_power4PicxPos">985</span>
             <span id="Puzzle_power4PicyPos">10</span>
             <span id="Puzzle_animal4PicHeight">70</span>
             <span id="Puzzle_animal4PicWidth">100</span>
@@ -241,10 +243,38 @@
                 {/msg}
             </span>
 
-            <span id="Puzzle_picture">
-                {{msg meaning="Puzzle.picture" desc="Prompt for a picture of an animal.\n{lb}{lb}Identical|Picture{rb}{rb}"}}
+
+
+        //            5th block
+
+            <span id="Puzzle_animal5">
+                {{msg meaning="Puzzle.animal4" desc="Snail: The animal.\n{lb}{lb}Identical|Snail{rb}{rb}"}}
+                    --
                 {{/msg}}
             </span>
+            <span id="Puzzle_animal5Pic">solar.png</span>
+            <span id="Puzzle_answer5">Solar</span>
+            <span id="Puzzle_weight5">0</span>
+            <span id="Puzzle_block5_color">#737576</span>
+            <span id="Puzzle_animal5xPos">1700</span>
+            <span id="Puzzle_animal5yPos">1700</span>
+            <span id="Puzzle_power5PicxPos">1130</span>
+            <span id="Puzzle_power5PicyPos">10</span>
+            <span id="Puzzle_animal5PicHeight">70</span>
+            <span id="Puzzle_animal5PicWidth">100</span>
+            <span id="Puzzle_animal5Legs">&nbsp;&nbsp;0&nbsp;&nbsp;</span>
+
+            <span id="Puzzle_animal5HelpUrl">
+                {msg meaning="Puzzle.animal4HelpUrl" desc="The URL of a page with basic information about snails."}
+                    https://en.wikipedia.org/wiki/Snail
+                {/msg}
+            </span>
+
+         //end
+            <span id="Puzzle_picture">
+            {{msg meaning="Puzzle.picture" desc="Prompt for a picture of an animal.\n{lb}{lb}Identical|Picture{rb}{rb}"}}
+            {{/msg}}
+        </span>
             <span id="Puzzle_error0">
                 {msg meaning="Puzzle.error0" desc="A congratulatory message displayed if the user placed all of the blocks correctly.\n\nParameters:\n* %1 - number of blocks correctly placed.  It is always an integer greater than 1.\n\nThe use of a new line character is optional."}
                     Perfect!\nAll %1 blocks are correct.
@@ -273,11 +303,13 @@
                     --
                 {{/msg}}
             </span>
-            <span id="Puzzle_animal1Pic">hydro.jpg</span>
-            <span id="Puzzle_block1_color">#02bfe9</span>
-            <span id="Puzzle_animal1xPos">580</span>
-            <span id="Puzzle_animal1yPos">610</span>
-            <span id="Puzzle_power1PicxPos">1200</span>
+            <span id="Puzzle_answer1">winds</span>
+            <span id="Puzzle_weight1">30</span>
+            <span id="Puzzle_animal1Pic">wind.png</span>
+            <span id="Puzzle_block1_color">#344a10</span>
+            <span id="Puzzle_animal1xPos">0.1219512195121951</span>
+            <span id="Puzzle_animal1yPos">0.5873452544704264</span>
+            <span id="Puzzle_power1PicxPos">834</span>
             <span id="Puzzle_power1PicyPos">10</span>
             <span id="Puzzle_animal1PicHeight">70</span>
             <span id="Puzzle_animal1PicWidth">100</span>
@@ -299,25 +331,18 @@
                     --
                 {{/msg}}
             </span>
-            <span id="Puzzle_animal2Pic">solar.png</span>
-            <span id="Puzzle_block2_color">#b9d463</span>
-            <span id="Puzzle_animal2xPos">900</span>
-            <span id="Puzzle_animal2yPos">600</span>
-            <span id="Puzzle_power2PicxPos">1330</span>
+            <span id="Puzzle_animal2Pic">wind.png</span>
+            <span id="Puzzle_answer2">winds</span>
+            <span id="Puzzle_weight2">30</span>
+
+            <span id="Puzzle_block2_color">#616662</span>
+            <span id="Puzzle_animal2xPos">0.5971914264597191</span>
+            <span id="Puzzle_animal2yPos">0.7840440165061898</span>
+            <span id="Puzzle_power2PicxPos">834</span>
             <span id="Puzzle_power2PicyPos">10</span>
             <span id="Puzzle_animal2PicHeight">70</span>
             <span id="Puzzle_animal2PicWidth">100</span>
-            <span id="Puzzle_animal2Legs">&nbsp;&nbsp;4&nbsp;&nbsp;</span>
-            <span id="Puzzle_animal2Trait1">
-                {{msg meaning="Puzzle.animal2Trait1" desc="Whiskers: A trait that cats have.\n{lb}{lb}Identical|Whisker{rb}{rb}"}}
-                    Whiskers
-                {{/msg}}
-            </span>
-            <span id="Puzzle_animal2Trait2">
-                {{msg meaning="Puzzle.animal2Trait2" desc="Fur: A trait that cats have.\n{lb}{lb}Identical|Fur{rb}{rb}"}}
-                    Fur
-                {{/msg}}
-            </span>
+
             <span id="Puzzle_animal2HelpUrl">
                 {msg meaning="Puzzle.animal2HelpUrl" desc="The URL of a page with basic information about cats."}
                     https://en.wikipedia.org/wiki/Cat
@@ -330,15 +355,16 @@
                 {{/msg}}
             </span>
             <span id="Puzzle_animal3Pic">wind.png</span>
-            <span id="Puzzle_animal3xPos">430</span>
-            <span id="Puzzle_animal3yPos">420</span>
-            <span id="Puzzle_power3PicxPos">1460</span>
-            <span id="Puzzle_power3PicyPos">10</span>
-            <span id="Puzzle_block3_color">#6fa8c6</span>
+            <span id="Puzzle_answer3">winds</span>
+            <span id="Puzzle_weight3">30</span>
 
+            <span id="Puzzle_animal3xPos">0.3747228381374723</span>
+            <span id="Puzzle_animal3yPos">0.6506189821182944</span>
+            <span id="Puzzle_power3PicxPos">834</span>
+            <span id="Puzzle_power3PicyPos">10</span>
+            <span id="Puzzle_block3_color">#161d20</span>
             <span id="Puzzle_animal3PicHeight">70</span>
             <span id="Puzzle_animal3PicWidth">100</span>
-            <span id="Puzzle_animal3Legs">&nbsp;&nbsp;6&nbsp;&nbsp;</span>
 
             <span id="Puzzle_animal3HelpUrl">
                 {msg meaning="Puzzle.animal3HelpUrl" desc="The URL of a page with basic information about bees."}
@@ -346,16 +372,19 @@
                 {/msg}
             </span>
 
+         //4th block
             <span id="Puzzle_animal4">
-                {{msg meaning="Puzzle.animal4" desc="Snail: The animal.\n{lb}{lb}Identical|Snail{rb}{rb}"}}
-                    --
-                {{/msg}}
-            </span>
-            <span id="Puzzle_animal4Pic">solar.png</span>
-            <span id="Puzzle_block4_color">#b9d463</span>
-            <span id="Puzzle_animal3xPos">329</span>
-            <span id="Puzzle_animal3yPos">650</span>
-            <span id="Puzzle_power4PicxPos">1330</span>
+            {{msg meaning="Puzzle.animal4" desc="Snail: The animal.\n{lb}{lb}Identical|Snail{rb}{rb}"}}
+                --
+            {{/msg}}
+        </span>
+            <span id="Puzzle_animal4Pic">hydro.jpg</span>
+            <span id="Puzzle_answer4">water</span>
+            <span id="Puzzle_weight4">0</span>
+            <span id="Puzzle_block4_color">#737576</span>
+            <span id="Puzzle_animal4xPos">1700</span>
+            <span id="Puzzle_animal4yPos">1700</span>
+            <span id="Puzzle_power4PicxPos">985</span>
             <span id="Puzzle_power4PicyPos">10</span>
             <span id="Puzzle_animal4PicHeight">70</span>
             <span id="Puzzle_animal4PicWidth">100</span>
@@ -367,10 +396,38 @@
                 {/msg}
             </span>
 
-            <span id="Puzzle_picture">
-                {{msg meaning="Puzzle.picture" desc="Prompt for a picture of an animal.\n{lb}{lb}Identical|Picture{rb}{rb}"}}
+
+
+        //            5th block
+
+            <span id="Puzzle_animal5">
+                {{msg meaning="Puzzle.animal4" desc="Snail: The animal.\n{lb}{lb}Identical|Snail{rb}{rb}"}}
+                    --
                 {{/msg}}
             </span>
+            <span id="Puzzle_animal5Pic">solar.png</span>
+            <span id="Puzzle_answer5">Solar</span>
+            <span id="Puzzle_weight5">10</span>
+            <span id="Puzzle_block5_color">#737576</span>
+            <span id="Puzzle_animal5xPos">0.7442719881744272</span>
+            <span id="Puzzle_animal5yPos">0.5997248968363136</span>
+            <span id="Puzzle_power5PicxPos">1130</span>
+            <span id="Puzzle_power5PicyPos">10</span>
+            <span id="Puzzle_animal5PicHeight">70</span>
+            <span id="Puzzle_animal5PicWidth">100</span>
+            <span id="Puzzle_animal5Legs">&nbsp;&nbsp;0&nbsp;&nbsp;</span>
+
+            <span id="Puzzle_animal5HelpUrl">
+                {msg meaning="Puzzle.animal4HelpUrl" desc="The URL of a page with basic information about snails."}
+                    https://en.wikipedia.org/wiki/Snail
+                {/msg}
+            </span>
+
+         //end
+            <span id="Puzzle_picture">
+            {{msg meaning="Puzzle.picture" desc="Prompt for a picture of an animal.\n{lb}{lb}Identical|Picture{rb}{rb}"}}
+            {{/msg}}
+        </span>
             <span id="Puzzle_error0">
                 {msg meaning="Puzzle.error0" desc="A congratulatory message displayed if the user placed all of the blocks correctly.\n\nParameters:\n* %1 - number of blocks correctly placed.  It is always an integer greater than 1.\n\nThe use of a new line character is optional."}
                     Perfect!\nAll %1 blocks are correct.
@@ -443,6 +500,9 @@
     <div id="images" style="min-width: 100%; position: absolute; left: 90%; top: 85%;">
 
     </div>
+    <div id="hutImage" style="min-width: 100%; position: absolute; left: 78.5%; top: 75%;">
+
+    </div>
     {call BlocklyGames.soy.dialog /}
     <div id="help" class="dialogHiddenContent">
         <div style="padding-bottom: 0.7ex">
@@ -467,6 +527,10 @@
         </div>
 //        <div id="sample" class="readonly"></div>
         {call BlocklyGames.soy.ok /}
+        {call BlocklyGames.soy.dialog /}
+        {call BlocklyGames.soy.doneDialog /}
+        {call BlocklyGames.soy.abortDialog /}
+        {call BlocklyGames.soy.storageDialog /}
     </div>
     <div id="answers" class="dialogHiddenContent">
         <div id="answerMessage">

@@ -36,6 +36,16 @@ html[dir="RTL"] .farSide {
   background-color: #ddd;
   color: #000;
 }
+
+
+
+
+.level_completed, .level_completed:hover {
+  background-color: #2edd00;
+  color: #000;
+}
+
+
 #containerCode {
   direction: ltr;
   background-color: #eee;

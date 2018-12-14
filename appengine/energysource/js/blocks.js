@@ -137,6 +137,7 @@ Blockly.Blocks['picture'] = {
      */
     init: function () {
         this.setColor();
+        this.appendDummyInput().appendField('', 'NAME');
         this.appendDummyInput('PIC');
         // this.setOutput(true);
         this.setPreviousStatement(true);
@@ -156,6 +157,8 @@ Blockly.Blocks['picture'] = {
         var pic = 'energysource/' + BlocklyGames.getMsg('Puzzle_animal' + n + 'Pic');
         var picHeight = BlocklyGames.getMsg('Puzzle_animal' + n + 'PicHeight');
         var picWidth = BlocklyGames.getMsg('Puzzle_animal' + n + 'PicWidth');
+         this.setFieldValue(BlocklyGames.getMsg(
+            'Puzzle_answer' + n).toUpperCase(), 'NAME');
         this.getInput('PIC')
             .appendField(new Blockly.FieldImage(pic, picWidth, picHeight));
         this.setPosition(n);

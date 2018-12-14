@@ -53,6 +53,7 @@ Energysource.init = function () {
     var rtl = BlocklyGames.isRtl();
     var blocklyDiv = document.getElementById('blockly');
     let images = document.getElementById('images');
+    let hutImage = document.getElementById('hutImage');
     // images.innerHTML = "<img style='float:left;' width=100 height=100 src='gallery/bulb.png'><img style='float:left;' width=100 height=100 src='gallery/bulb.png'><img style='float:left;' width=100 height=100 src='gallery/bulb.png'><img style='float:left;' width=100 height=100 src='gallery/bulb.png'>"
     if (BlocklyGames.LEVEL == 2) {
         images.innerHTML = "<img style='float:left;' width=100 height=100 src='gallery/batterygreen.png'>";
@@ -61,11 +62,13 @@ Energysource.init = function () {
 
         images.innerHTML = "<img style='float:left;' width=100 height=100 src='gallery/battery.png'>";
     }
+    hutImage.innerHTML = "<img style='float:left;' width=180 height=128 src='gallery/0.png'>";
+
     images.innerHTML = images.innerHTML + "<div id='percentageValue' style='    position: fixed;\n" +
         "    margin-left: 38px;\n" +
         "    font-size: 31px;\n" +
         "    font-family: \"Chicle\", cursive;\n" +
-        "    margin-top: -30px;'>0%</div>";
+        "    margin-top: -35px;'>0%</div>";
     var onresize = function (e) {
         blocklyDiv.style.width = (window.innerWidth - 20) + 'px';
         blocklyDiv.style.height =
@@ -238,7 +241,7 @@ Energysource.checkAnswers = function () {
     var errors = 0;
     var badBlocks = [];
     for (var b = 0, block; block = blocks[b]; b++) {
-        if (!block.isCorrect() && block.type !== 'animal' && block.getColour()!=='#000000') {
+        if (!block.isCorrect() && block.type !== 'animal' && block.getColour() !== '#000000') {
             errors++;
             block.select();
             badBlocks.push(block);
@@ -274,10 +277,14 @@ Energysource.checkAnswers = function () {
             left: rtl ? '5%' : '70%',
             top: '5em'
         };
-        var action = errors ? BlocklyDialogs.stopDialogKeyDown :
-            BlocklyInterface.stopDialogKeyDown;
-        BlocklyDialogs.showDialog(content, button, true, true, style, action);
-        BlocklyDialogs.startDialogKeyDown();
+        // var action = errors ? BlocklyDialogs.stopDialogKeyDown :
+        //     BlocklyInterface.stopDialogKeyDown;
+        // BlocklyDialogs.showDialog(content, button, true, true, style, action);
+        // BlocklyDialogs.startDialogKeyDown();
+
+        BlocklyDialogs.congratulations();
+
+
     }
 
     if (badBlocks.length) {
@@ -292,8 +299,11 @@ Energysource.checkAnswers = function () {
     // alert(percentage+"% have done correctly");
 
     let child = document.getElementById('images').children[0];
+    let hutImage = document.getElementById('hutImage').children[0];
     document.getElementById('percentageValue').innerText = percentage + '%';
     let picNum = Number.parseInt(percentage / 25);
+
+    hutImage.src = 'gallery/'+picNum+'.png';
     if (BlocklyGames.LEVEL === 2) {
         if (picNum === 0) {
             child.src = 'gallery/batterygreen.png';
@@ -412,7 +422,7 @@ Energysource.showHelp = function (animate) {
         var style = {
             width: '50%',
             left: '25%',
-            top: '5em'
+            top: '18em'
         };
         BlocklyDialogs.showDialog(help, button, animate, true, style,
             BlocklyDialogs.stopDialogKeyDown);
