@@ -92,6 +92,11 @@
         <note priority="1" from="description">Command to draw a circle.\n{lb}{lb}Identical|Circle{rb}{rb}</note>
         <note priority="1" from="meaning">Movie.circleDraw</note>
       </trans-unit>
+      <trans-unit id="501075344940371814" datatype="html">
+        <source>Bee</source>
+        <note priority="1" from="description">Bee: The insect.\n{lb}{lb}Identical|Bee{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal3</note>
+      </trans-unit>
       <trans-unit id="515568367940150060" datatype="html">
         <source>Functions</source>
         <note priority="1" from="description">category - Blocks related to [https://en.wikipedia.org/wiki/Subroutine defining or using procedures/functions].\n{lb}{lb}Identical|Functions{rb}{rb}</note>
@@ -247,6 +252,11 @@
         <note priority="1" from="description">callout - %1 will be replaced with an image of the dropdown menu that the user needs to click.</note>
         <note priority="1" from="meaning">Maze.helpMenu</note>
       </trans-unit>
+      <trans-unit id="1474725060640077068" datatype="html">
+        <source>traits:</source>
+        <note priority="1" from="description">Prompt for a couple of traits of an animal (e.g. Duck: feathers, beak).\n{lb}{lb}Identical|Trait{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.traits</note>
+      </trans-unit>
       <trans-unit id="1530115130327733098" datatype="html">
         <source>Your solution works, but you can do better.  Use functions to reduce the amount of repeated code.</source>
         <note priority="1" from="description">Dialog telling user to seek a better answer.</note>
@@ -282,6 +292,11 @@
         <note priority="1" from="description">alert - Displayed when a level is complete.  %1 is an integer greater than 1.</note>
         <note priority="1" from="meaning">Games.linesOfCode2</note>
       </trans-unit>
+      <trans-unit id="1750183075968997387" datatype="html">
+        <source>Duck</source>
+        <note priority="1" from="description">Duck: The bird.\n{lb}{lb}Identical|Duck{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal1</note>
+      </trans-unit>
       <trans-unit id="1766725995274107609" datatype="html">
         <source>banjo</source>
         <note priority="1" from="description">Name of musical instrument.\n{lb}{lb}Identical|banjo{rb}{rb}</note>
@@ -302,6 +317,11 @@
         <note priority="1" from="description">warning - No more blocks may be added until some are removed.  Please include '%0' in the translated string.  It will be replaced with '0' and made bold.</note>
         <note priority="1" from="meaning">Maze.capacity0</note>
       </trans-unit>
+      <trans-unit id="1826461500437475319" datatype="html">
+        <source>Slime</source>
+        <note priority="1" from="description">Slime: A trait that snails have.\n{lb}{lb}Identical|Slime{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal4Trait2</note>
+      </trans-unit>
       <trans-unit id="1848865137386959725" datatype="html">
         <source>Choose a category to see the blocks.</source>
         <note priority="1" from="description">Instructions for accessing blocks that are hidden inside categories.</note>
@@ -311,11 +331,6 @@
         <source>Cancel</source>
         <note priority="1" from="description">button label - Pressing this button cancels a proposed action.\n{lb}{lb}Identical|Cancel{rb}{rb}</note>
         <note priority="1" from="meaning">Games.dialogCancel</note>
-      </trans-unit>
-      <trans-unit id="1927043483041455643" datatype="html">
-        <source>you have done %1% of things correctly.</source>
-        <note priority="1" from="description">An error message displayed if the user misplaced multiple blocks.\n\nParameters:\n* %1 - number of blocks incorrectly placed, which is always greater than 1 (or the message Puzzle.error1 would be used).</note>
-        <note priority="1" from="meaning">Puzzle.error2</note>
       </trans-unit>
       <trans-unit id="1947445862128077179" datatype="html">
         <source>Activity Line Measurement</source>
@@ -402,11 +417,6 @@
         <note priority="1" from="description">Label for the y-coordinate of the start of a line</note>
         <note priority="1" from="meaning">Movie.y1</note>
       </trans-unit>
-      <trans-unit id="2344132425475666456" datatype="html">
-        <source>--</source>
-        <note priority="1" from="description">Cat: The animal.\n{lb}{lb}Identical|Cat{rb}{rb}</note>
-        <note priority="1" from="meaning">Puzzle.animal2</note>
-      </trans-unit>
       <trans-unit id="2352028843622499350" datatype="html">
         <source>Waits for the specified duration.</source>
         <note priority="1" from="description">tooltip</note>
@@ -432,6 +442,11 @@
         <note priority="1" from="description">block text - Infinitive or imperative of a verb to specify the colour of the lines that should be drawn in the future by an imaginary pen.  This is followed by a block showing the colour</note>
         <note priority="1" from="meaning">Movie.setColour</note>
       </trans-unit>
+      <trans-unit id="2496345770637243642" datatype="html">
+        <source>Living Things</source>
+        <note priority="1" from="description">IBID</note>
+        <note priority="1" from="meaning">Games.puzzle</note>
+      </trans-unit>
       <trans-unit id="2555132265974908158" datatype="html">
         <source>bold</source>
         <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Specifies that a typographic font should be [https://en.wikipedia.org/wiki/Emphasis_(typography) bold].</note>
@@ -442,10 +457,10 @@
         <note priority="1" from="description">Label on a button that opens a gallery of music made by other users.</note>
         <note priority="1" from="meaning">Music.galleryMsg</note>
       </trans-unit>
-      <trans-unit id="2736737898400624138" datatype="html">
-        <source>We have travelled to another region and it’s night time. Think of the resources we can use to charge the battery here.</source>
-        <note priority="1" from="description">Instructions for the puzzle.  For context, see [https://blockly-games.appspot.com/puzzle Blockly Puzzle].</note>
-        <note priority="1" from="meaning">Puzzle.helpText</note>
+      <trans-unit id="2691309882763584514" datatype="html">
+        <source>choose...</source>
+        <note priority="1" from="description">Initial text displayed in a dropdown menu from which the user should choose an option.\n{lb}{lb}Identical|Choose{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.legsChoose</note>
       </trans-unit>
       <trans-unit id="2739213385531554268" datatype="html">
         <source>Force</source>
@@ -491,11 +506,6 @@
         <source>normal</source>
         <note priority="1" from="description">[[Translating:Blockly#Drop-Down_Menus dropdown]] - Specifies that a typographic font should be normal (neither in italics or bold).</note>
         <note priority="1" from="meaning">Turtle.fontNormal</note>
-      </trans-unit>
-      <trans-unit id="3173707523241500849" datatype="html">
-        <source>This looks like a beautiful green field. Think of the resources we can use to charge the battery here.</source>
-        <note priority="1" from="description">Instructions for the puzzle.  For context, see [https://blockly-games.appspot.com/puzzle Blockly Puzzle].</note>
-        <note priority="1" from="meaning">Puzzle.helpText</note>
       </trans-unit>
       <trans-unit id="3190825933229819894" datatype="html">
         <source>Put the player back at the start of the maze.</source>
@@ -546,6 +556,16 @@
         <source>Create four start blocks that each play 'Frère Jacques' twice. Add the correct number of delay blocks.</source>
         <note priority="1" from="description">Instructions.</note>
         <note priority="1" from="meaning">Music.helpText9</note>
+      </trans-unit>
+      <trans-unit id="3406853780244170069" datatype="html">
+        <source>Shell</source>
+        <note priority="1" from="description">Shell: A trait that snails have.\n{lb}{lb}Identical|Shell{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal4Trait1</note>
+      </trans-unit>
+      <trans-unit id="3470071553035745545" datatype="html">
+        <source>Cat</source>
+        <note priority="1" from="description">Cat: The animal.\n{lb}{lb}Identical|Cat{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal2</note>
       </trans-unit>
       <trans-unit id="3478101938294488773" datatype="html">
         <source>You can fit more than one block inside a 'repeat' block.</source>
@@ -616,11 +636,6 @@
         <source>drum</source>
         <note priority="1" from="description">Name of musical instrument.\n{lb}{lb}Identical|drum{rb}{rb}</note>
         <note priority="1" from="meaning">Music.drum</note>
-      </trans-unit>
-      <trans-unit id="3911752059007716460" datatype="html">
-        <source>--</source>
-        <note priority="1" from="description">Snail: The animal.\n{lb}{lb}Identical|Snail{rb}{rb}</note>
-        <note priority="1" from="meaning">Puzzle.animal4</note>
       </trans-unit>
       <trans-unit id="4016533017150562878" datatype="html">
         <source>You have used up all the blocks for this level. To create a new block, you first need to delete an existing block.</source>
@@ -837,10 +852,10 @@
         <note priority="1" from="description">category - Blocks related to [https://github.com/google/blockly/wiki/Variables variables].\n{lb}{lb}Identical|Variables{rb}{rb}</note>
         <note priority="1" from="meaning">Games.catVariables</note>
       </trans-unit>
-      <trans-unit id="5446872191589684203" datatype="html">
-        <source></source>
-        <note priority="1" from="description">Prompt for a picture of an animal.\n{lb}{lb}Identical|Picture{rb}{rb}</note>
-        <note priority="1" from="meaning">Puzzle.picture</note>
+      <trans-unit id="5407183519779774573" datatype="html">
+        <source>legs:</source>
+        <note priority="1" from="description">Prompt for the number of legs that an animal has.\n{lb}{lb}Identical|Leg{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.legs</note>
       </trans-unit>
       <trans-unit id="5464017007607359776" datatype="html">
         <source>flute</source>
@@ -857,11 +872,6 @@
         <note priority="1" from="description">callout - This dialog gives the user the option to skip this level.</note>
         <note priority="1" from="meaning">Games.helpAbort</note>
       </trans-unit>
-      <trans-unit id="5519387814232051196" datatype="html">
-        <source>We have to charge a battery in this region using different renewable energy resources.</source>
-        <note priority="1" from="description">Instructions for the puzzle.  For context, see [https://blockly-games.appspot.com/puzzle Blockly Puzzle].</note>
-        <note priority="1" from="meaning">Puzzle.helpText</note>
-      </trans-unit>
       <trans-unit id="5539181822180691031" datatype="html">
         <source>Run your program until it stops. Then you may submit your music to the gallery.</source>
         <note priority="1" from="description">Error message.</note>
@@ -871,6 +881,11 @@
         <source>Draw a yellow star.</source>
         <note priority="1" from="description">Instructions.</note>
         <note priority="1" from="meaning">Turtle.helpText3b</note>
+      </trans-unit>
+      <trans-unit id="5608606240995218215" datatype="html">
+        <source>Snail</source>
+        <note priority="1" from="description">Snail: The animal.\n{lb}{lb}Identical|Snail{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal4</note>
       </trans-unit>
       <trans-unit id="5683520235628284499" datatype="html">
         <source>Choose your favourite player from this menu.</source>
@@ -907,6 +922,11 @@
         <note priority="1" from="description">Instructions.</note>
         <note priority="1" from="meaning">Movie.helpText9</note>
       </trans-unit>
+      <trans-unit id="5869746678245994303" datatype="html">
+        <source>Honey</source>
+        <note priority="1" from="description">Honey: A trait that bees have.\n{lb}{lb}Identical|Honey{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal3Trait1</note>
+      </trans-unit>
       <trans-unit id="5894142643947508380" datatype="html">
         <source>y</source>
         <note priority="1" from="description">Label for a y-coordinate (vertical) input.</note>
@@ -921,6 +941,11 @@
         <source>Draw a small yellow star, then draw a line above it.</source>
         <note priority="1" from="description">Instructions.</note>
         <note priority="1" from="meaning">Turtle.helpText4b</note>
+      </trans-unit>
+      <trans-unit id="6014527610997525213" datatype="html">
+        <source>For each animal (green), attach its picture, choose its number of legs, and make a stack of its traits.</source>
+        <note priority="1" from="description">Instructions for the puzzle.  For context, see [https://blockly-games.appspot.com/puzzle Blockly Puzzle].</note>
+        <note priority="1" from="meaning">Puzzle.helpText</note>
       </trans-unit>
       <trans-unit id="6072728260550347194" datatype="html">
         <source>x</source>
@@ -972,11 +997,6 @@
         <note priority="1" from="description">Tooltip for the block that reports the player's health.</note>
         <note priority="1" from="meaning">Pond.healthTooltip</note>
       </trans-unit>
-      <trans-unit id="6418181761334668134" datatype="html">
-        <source>--</source>
-        <note priority="1" from="description">Mountains: The insect.\n{lb}{lb}Identical|Mountains{rb}{rb}</note>
-        <note priority="1" from="meaning">Puzzle.animal3</note>
-      </trans-unit>
       <trans-unit id="6456907015338240672" datatype="html">
         <source>Share your blocks with this link:\n\n%1</source>
         <note priority="1" from="description">alert - After the user has pressed a button to save his/her program, this provides the URL (%1) to retrieve the program.  The characters '\n\n' indicate that a blank line will be displayed before the URL (in English).  Leave those in unless you move %1 to the beginning or middle of the text, in which case you should use your judgment about where blank lines would be most useful.\n\nParameters:\n* %1 - URL of saved program.</note>
@@ -986,11 +1006,6 @@
         <source>piano</source>
         <note priority="1" from="description">Name of musical instrument.\n{lb}{lb}Identical|piano{rb}{rb}</note>
         <note priority="1" from="meaning">Music.piano</note>
-      </trans-unit>
-      <trans-unit id="6480369063874883983" datatype="html">
-        <source>--</source>
-        <note priority="1" from="description">Duck: The bird.\n{lb}{lb}Identical|Duck{rb}{rb}</note>
-        <note priority="1" from="meaning">Puzzle.animal1</note>
       </trans-unit>
       <trans-unit id="6543464286497146566" datatype="html">
         <source>Gallery</source>
@@ -1072,6 +1087,11 @@
         <note priority="1" from="description">tooltip - (x, y) marks the coordinate of bird, (0, 0) is the bottom left corner and (100, 100) top right.</note>
         <note priority="1" from="meaning">Bird.positionTooltip</note>
       </trans-unit>
+      <trans-unit id="7070128001410938826" datatype="html">
+        <source>Beak</source>
+        <note priority="1" from="description">Beak: A trait that ducks have.\n{lb}{lb}Identical|Beak{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal1Trait2</note>
+      </trans-unit>
       <trans-unit id="7089740218907481322" datatype="html">
         <source>Turns the turtle left or right by the specified number of degrees.</source>
         <note priority="1" from="description">'Left' means counter-clockwise/anti-clockwise, and 'right' means clockwise.</note>
@@ -1086,6 +1106,11 @@
         <source>Returns the X coordinate of the player (0 is the left edge, 100 is the right edge).</source>
         <note priority="1" from="description">Tooltip for the block that reports the player's horizontal location.</note>
         <note priority="1" from="meaning">Pond.locXTooltip</note>
+      </trans-unit>
+      <trans-unit id="7264063713014053084" datatype="html">
+        <source>%1 blocks are incorrect.</source>
+        <note priority="1" from="description">An error message displayed if the user misplaced multiple blocks.\n\nParameters:\n* %1 - number of blocks incorrectly placed, which is always greater than 1 (or the message Puzzle.error1 would be used).</note>
+        <note priority="1" from="meaning">Puzzle.error2</note>
       </trans-unit>
       <trans-unit id="7327913532655152334" datatype="html">
         <source>Colour</source>
@@ -1132,6 +1157,11 @@
         <note priority="1" from="description">Label on a button that submits the user's art to a public gallery.</note>
         <note priority="1" from="meaning">Music.submitMsg</note>
       </trans-unit>
+      <trans-unit id="7710842474668852368" datatype="html">
+        <source>picture:</source>
+        <note priority="1" from="description">Prompt for a picture of an animal.\n{lb}{lb}Identical|Picture{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.picture</note>
+      </trans-unit>
       <trans-unit id="7726741685578327869" datatype="html">
         <source>Delete all your solutions?</source>
         <note priority="1" from="description">Confirmation prompt for deleting all the user's data.</note>
@@ -1161,6 +1191,11 @@
         <source>Create a second start block that has two delay blocks, then also plays 'Frère Jacques'.</source>
         <note priority="1" from="description">Instructions.</note>
         <note priority="1" from="meaning">Music.helpText7b</note>
+      </trans-unit>
+      <trans-unit id="8039840332068856511" datatype="html">
+        <source>Stinger</source>
+        <note priority="1" from="description">Stinger: A trait that bees have.\n{lb}{lb}Identical|Stinger{rb}{rb}</note>
+        <note priority="1" from="meaning">Puzzle.animal3Trait2</note>
       </trans-unit>
       <trans-unit id="8126100101233789051" datatype="html">
         <source>Compose anything you want. You've got a huge number of new blocks you can explore. Have fun!</source>
