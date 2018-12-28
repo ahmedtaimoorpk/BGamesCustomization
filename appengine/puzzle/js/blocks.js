@@ -37,12 +37,12 @@ Puzzle.Blocks.ANIMAL_HUE = 120;
 /**
  * Common HSV hue for all picture blocks.
  */
-Puzzle.Blocks.PICTURE_HUE = 30;
+Puzzle.Blocks.PICTURE_HUE = "#c8d712";
 
 /**
  * Common HSV hue for all trait blocks.
  */
-Puzzle.Blocks.TRAIT_HUE = 290;
+Puzzle.Blocks.TRAIT_HUE = "#fff568";
 
 Blockly.Blocks['animal'] = {
     /**
@@ -95,9 +95,21 @@ Blockly.Blocks['animal'] = {
     },
 
     setPosition: function (n) {
-        let x = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'xPos');
-        let y = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'yPos');
-        this.moveBy(x == null ? 1700 : x, y == null ? 500 : y);
+        let percentageX = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'xPos');
+        let percentageY= BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'yPos');
+         // let percentageX = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'xPos');
+        // let percentageY = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'yPos');
+
+        if (percentageX < 1 && percentageY < 1) {
+            var divBlockly = document.getElementById('blockly');
+            let x = divBlockly.style.width.replace('px', '');
+            let y = divBlockly.style.height.replace('px', '');
+            this.moveBy(percentageX == null ? 300 : x * percentageX, percentageY == null ? 500 : percentageY * y);
+        }
+        else {
+            this.moveBy(percentageX == null ? 300 : percentageX, percentageY == null ? 500 : percentageY);
+
+        }
     },
 
 
@@ -140,9 +152,21 @@ Blockly.Blocks['picture'] = {
     },
 
     setPosition: function (n) {
-        let x = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'PicxPos');
-        let y = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'PicyPos');
-        this.moveBy(x == null ? 1700 : x, y == null ? 500 : y);
+        let percentageX = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'PicxPos');
+        let percentageY = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'PicyPos');
+
+        if (percentageX < 1 && percentageY < 1) {
+            var divBlockly = document.getElementById('blockly');
+            let x = divBlockly.style.width.replace('px', '');
+            let y = divBlockly.style.height.replace('px', '');
+            this.moveBy(percentageX == null ? 300 : x * percentageX, percentageY == null ? 500 : percentageY * y);
+        }
+        else {
+            this.moveBy(percentageX == null ? 300 : percentageX, percentageY == null ? 500 : percentageY);
+
+        }
+
+
     },
     /**
      * Evaluate the correctness of this block.
@@ -206,12 +230,22 @@ Blockly.Blocks['trait'] = {
     },
 
 
-
     setPosition: function (n, m) {
-        let x = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'Trait' + m + 'xPos');
-        let y = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'Trait' + m + 'yPos');
+        let percentageX = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'Trait' + m + 'xPos');
+        let percentageY = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'Trait' + m + 'yPos');
+        // let percentageX = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'xPos');
+        //        let percentageY = BlocklyGames.getMsgOrNull('Puzzle_animal' + n + 'yPos');
 
-        this.moveBy(x == null ? 1366 : x, y == null ? 500 : y);
+        if (percentageX < 1 && percentageY < 1) {
+            var divBlockly = document.getElementById('blockly');
+            let x = divBlockly.style.width.replace('px', '');
+            let y = divBlockly.style.height.replace('px', '');
+            this.moveBy(percentageX == null ? 300 : x * percentageX, percentageY == null ? 500 : percentageY * y);
+        }
+        else {
+            this.moveBy(percentageX == null ? 300 : percentageX, percentageY == null ? 500 : percentageY);
+
+        }
     },
     /**
      * Evaluate the correctness of this block.

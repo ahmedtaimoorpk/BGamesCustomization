@@ -158,7 +158,7 @@ Blockly.Blocks['picture'] = {
         var picHeight = BlocklyGames.getMsg('Puzzle_animal' + n + 'PicHeight');
         var picWidth = BlocklyGames.getMsg('Puzzle_animal' + n + 'PicWidth');
          this.setFieldValue(BlocklyGames.getMsg(
-            'Puzzle_answer' + n).toUpperCase(), 'NAME');
+            'Puzzle_answer' + n), 'NAME');
         this.getInput('PIC')
             .appendField(new Blockly.FieldImage(pic, picWidth, picHeight));
         this.setPosition(n);

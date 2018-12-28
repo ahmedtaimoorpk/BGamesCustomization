@@ -55,14 +55,14 @@ Energysource.init = function () {
     let images = document.getElementById('images');
     let hutImage = document.getElementById('hutImage');
     // images.innerHTML = "<img style='float:left;' width=100 height=100 src='gallery/bulb.png'><img style='float:left;' width=100 height=100 src='gallery/bulb.png'><img style='float:left;' width=100 height=100 src='gallery/bulb.png'><img style='float:left;' width=100 height=100 src='gallery/bulb.png'>"
-    if (BlocklyGames.LEVEL == 2) {
+    if (BlocklyGames.LEVEL === 2) {
         images.innerHTML = "<img style='float:left;' width=100 height=100 src='gallery/batterygreen.png'>";
     }
     else {
 
         images.innerHTML = "<img style='float:left;' width=100 height=100 src='gallery/battery.png'>";
     }
-    hutImage.innerHTML = "<img style='float:left;' width=180 height=128 src='gallery/0.png'>";
+    hutImage.innerHTML = "<img style='float:left;' width=270 height=192 src='gallery/0.png'>";
 
     images.innerHTML = images.innerHTML + "<div id='percentageValue' style='    position: fixed;\n" +
         "    margin-left: 38px;\n" +
@@ -161,7 +161,16 @@ Energysource.init = function () {
         if (event.type === Blockly.Events.BLOCK_MOVE &&
             event.newParentId !== event.oldParentId) {
             if (event.newParentId !== undefined && !Blockly.mainWorkspace.getBlockById(event.blockId).isCorrect()) {
-                var messages = "This does not seem right, try another position for this resource";
+
+                let messages = "This does not seem right, try another position for this resource";
+                block = Blockly.mainWorkspace.getBlockById(event.blockId);
+
+                if (BlocklyGames.LEVEL === 2) {
+                    if(block.answer==='Solar Panel'){
+                        messages = 'There is no Sun, Solar Panel is useless here. Use something different.';
+                    }
+                }
+
                 var textDiv = document.getElementById('answerMessage');
                 textDiv.textContent = '';
                 var line = document.createElement('div');
@@ -169,18 +178,20 @@ Energysource.init = function () {
                 textDiv.appendChild(line);
                 var content = document.getElementById('answers');
                 var button = document.getElementById('checkButton');
+                //Play audio for wrong selection.
                 var audio = new Audio('energysource/wrong.mp3');
                 audio.play();
+                //Check if workspace is RTL
                 var rtl = BlocklyGames.isRtl();
                 var style = {
                     width: '25%',
                     left: rtl ? '5%' : '70%',
                     top: '5em'
                 };
+                //Event listener for dialog OK button.
                 var action = BlocklyInterface.stopDialogKeyDown;
                 BlocklyDialogs.showDialog(content, button, true, true, style, action);
                 BlocklyDialogs.startDialogKeyDown();
-                block = Blockly.mainWorkspace.getBlockById(event.blockId);
                 block.setColor('#808080');
                 block.getParent().setColor('#808080');
             }
@@ -303,7 +314,7 @@ Energysource.checkAnswers = function () {
     document.getElementById('percentageValue').innerText = percentage + '%';
     let picNum = Number.parseInt(percentage / 25);
 
-    hutImage.src = 'gallery/'+picNum+'.png';
+    hutImage.src = 'gallery/' + picNum + '.png';
     if (BlocklyGames.LEVEL === 2) {
         if (picNum === 0) {
             child.src = 'gallery/batterygreen.png';
@@ -417,26 +428,37 @@ Energysource.showHelp = function (animate) {
 
     }
     else {
-        var help = document.getElementById('help');
-        var button = document.getElementById('helpButton');
-        var style = {
-            width: '50%',
-            left: '25%',
-            top: '18em'
+        var btn = document.getElementById('startButton');
+        var bg = document.getElementById('startButtonBg');
+        btn.style.display = 'block';
+        bg.style.display = 'block';
+        btn.onclick = function (event) {
+            btn.style.display = 'None';
+            bg.style.display = 'None';
+            //Play audio for OK button Click.
+            var audio = new Audio('energysource/level' + BlocklyGames.LEVEL + '.mp3');
+            audio.play();
         };
-        BlocklyDialogs.showDialog(help, button, animate, true, style,
-            BlocklyDialogs.stopDialogKeyDown);
-        BlocklyDialogs.startDialogKeyDown();
         Energysource.FirstTime = false;
+
     }
 };
+Energysource.stopDialogKeyDown = function () {
+    document.body.removeEventListener('keydown',
+        BlocklyDialogs.dialogKeyDown_, true);
+//Play audio for OK button Click.
+    var audio = new Audio('energysource/level' + BlocklyGames.LEVEL + '.mp3');
+    audio.play();
+
+};
+
 Energysource.BlinkBlocks = function () {
 
     var blocks = BlocklyGames.workspace.getAllBlocks();
     var errors = 0;
     var badBlocks = [];
     for (var b = 0, block; block = blocks[b]; b++) {
-        if (!block.isCorrect() && block.type != 'animal') {
+        if (!block.isCorrect() && block.type !== 'animal') {
             errors++;
             block.select();
             badBlocks.push(block);
