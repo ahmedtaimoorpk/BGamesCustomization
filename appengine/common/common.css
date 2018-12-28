@@ -201,13 +201,13 @@ button:hover:not(:disabled) {
     min-width: 20px;
     display: None;
     position: absolute;
-    left: 45%;
-    top: 47%;
+    left: 42%;
+    top: 44%;
     background-color: #adadad;
     color: #383838;
     font-family: monospace;
     padding: 10px;
-    font-size: 20pt;
+    font-size: 40pt;
     padding: 10px 37px;
     border-radius: 11px;
     /* opacity: 0.95; */

@@ -57,11 +57,12 @@
             {param level: $ij.level /}
             {param maxLevel: $ij.maxLevel /}
             {param lang: $ij.lang /}
+            {param scheme: $ij.scheme /}
             {param suffix}&skin={$ij.skin}{/param}
           {/call}
         </h1>
       </td>
-      <td class="farSide">
+      <td class="farSide" style="display: none;">
         <select id="languageMenu"></select>
         &nbsp;
         <button id="linkButton" title="{msg meaning="Games.linkTooltip" desc="IBID"}Save and link to blocks.{/msg}">

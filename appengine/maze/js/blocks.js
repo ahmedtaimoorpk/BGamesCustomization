@@ -28,22 +28,29 @@ goog.provide('Maze.Blocks');
 goog.require('Blockly');
 goog.require('Blockly.JavaScript');
 goog.require('BlocklyGames');
+goog.require('Constants');
 
 
 /**
  * Common HSV hue for all movement blocks.
  */
-Maze.Blocks.MOVEMENT_HUE = 290;
+// Maze.Blocks.MOVEMENT_HUE = 290;
+// Maze.Blocks.MOVEMENT_HUE = '#F3D250';
+Maze.Blocks.MOVEMENT_HUE = Constants.Color["blocksColor1"];
 
 /**
  * HSV hue for loop block.
  */
-Maze.Blocks.LOOPS_HUE = 120;
+// Maze.Blocks.LOOPS_HUE = 120;
+// Maze.Blocks.LOOPS_HUE = '#F78888';
+Maze.Blocks.LOOPS_HUE = Constants.Color["blocksColor2"];
 
 /**
  * Common HSV hue for all logic blocks.
  */
-Maze.Blocks.LOGIC_HUE = 210;
+// Maze.Blocks.LOGIC_HUE = 210;
+Maze.Blocks.LOGIC_HUE = Constants.Color["blocksColor3"];
+
 
 /**
  * Left turn arrow to be appended to messages.

@@ -182,7 +182,9 @@ Puzzle.init = function () {
 
 
     document.getElementsByClassName('blocklySvg')[0].style.backgroundImage = 'url("gallery/' + BlocklyGames.getMsgOrNull("my_background") + '")';
-    document.getElementsByClassName('blocklySvg')[0].style.backgroundSize = '100% 981px';
+    // document.getElementsByClassName('blocklySvg')[0].style.backgroundSize = '100% 981px';
+    document.getElementsByClassName('blocklySvg')[0].style.backgroundSize = blocklyDiv.style.width + ' ' + blocklyDiv.style.height;
+
 
 };
 /**
