@@ -3,7 +3,10 @@
 ##############################
 
 USER_APPS = {index,puzzle,maze,bird,turtle,movie,music,pond/docs,pond/tutor,pond/duck,gallery}
+MY_APPS = index maze pond/docs pond/tutor
 ALL_JSON = {./,index,puzzle,maze,bird,turtle,movie,music,pond/docs,pond,pond/tutor,pond/duck,gallery}
+MY_JSON = ./ index puzzle maze bird turtle movie music pond/docs pond pond/tutor pond/duck gallery
+
 ALL_TEMPLATES = appengine/template.soy,appengine/index/template.soy,appengine/puzzle/template.soy,appengine/maze/template.soy,appengine/bird/template.soy,appengine/turtle/template.soy,appengine/movie/template.soy,appengine/music/template.soy,appengine/pond/docs/template.soy,appengine/pond/template.soy,appengine/pond/tutor/template.soy,appengine/pond/duck/template.soy,appengine/gallery/template.soy
 
 APP_ENGINE_THIRD_PARTY = appengine/third-party
@@ -32,6 +35,10 @@ puzzle-en: common-en
 maze-en: common-en
 	$(SOY_COMPILER) --outputPathFormat appengine/maze/generated/en/soy.js --srcs appengine/maze/template.soy
 	python build-app.py maze en
+
+maze-tr: common-tr
+	$(SOY_COMPILER) --outputPathFormat appengine/maze/generated/tr/soy.js --srcs appengine/maze/templatetr.soy
+	python build-app.py maze tr
 
 bird-en: common-en
 	$(SOY_COMPILER) --outputPathFormat appengine/bird/generated/en/soy.js --srcs appengine/bird/template.soy
@@ -81,13 +88,36 @@ en: index-en puzzle-en maze-en bird-en turtle-en movie-en music-en pond-docs-en 
 languages:
 	$(SOY_EXTRACTOR) --outputFile extracted_msgs.xlf --srcs $(ALL_TEMPLATES)
 	i18n/xliff_to_json.py --xlf extracted_msgs.xlf --templates $(ALL_TEMPLATES)
-	@for app in $(ALL_JSON); do \
+	@for app in $(MY_JSON); do \
 	  mkdir -p appengine/$$app/generated; \
 	  i18n/json_to_js.py --path_to_jar third-party --output_dir appengine/$$app/generated --template appengine/$$app/template.soy --key_file json/keys.json json/*.json; \
 	done
-	@for app in $(USER_APPS); do \
-	  python build-app.py $$app; \
+	@for app in $(MY_APPS); do \
+	  python build-app.py $$app en; \
 	done
+	@for app in $(MY_APPS); do \
+	  python build-app.py $$app tr; \
+	done
+
+languages-build:
+	@for app in $(MY_JSON); do \
+	  mkdir -p appengine/$$app/generated; \
+	  i18n/json_to_js.py --path_to_jar third-party --output_dir appengine/$$app/generated --template appengine/$$app/template.soy --key_file json/keys.json json/*.json; \
+	done
+
+test:
+	@for app in $(MY_APPS); do \
+	  python build-app.py $$app tr; \
+	done
+
+build-pond-tutor:
+	$(SOY_EXTRACTOR) --outputFile extracted_msgs.xlf --srcs $(ALL_TEMPLATES)
+	i18n/xliff_to_json.py --xlf extracted_msgs.xlf --templates $(ALL_TEMPLATES)
+	
+	mkdir -p appengine/pond/tutor/generated
+	i18n/json_to_js.py --path_to_jar third-party --output_dir appengine/$$app/generated --template appengine/pond/tutor/template.soy --key_file json/keys.json json/*.json
+	python build-app.py pond/tutor tr
+	
 
 deps:
 	mkdir -p third-party

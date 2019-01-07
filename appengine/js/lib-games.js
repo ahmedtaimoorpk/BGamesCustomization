@@ -111,7 +111,8 @@ BlocklyGames.LANGUAGE_NAME = {
   'uk': 'Українська',
   'vi': 'Tiếng Việt',
   'zh-hans': '简体中文',
-  'zh-hant': '正體中文'
+  'zh-hant': '正體中文',
+  'ur': 'اردو'
 };
 
 /**

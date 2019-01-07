@@ -69,6 +69,7 @@ Movie.init = function() {
   document.body.innerHTML = Movie.soy.start({}, null,
       {lang: BlocklyGames.LANG,
        level: BlocklyGames.LEVEL,
+       scheme: Constants.ColorScheme,
        maxLevel: 3,
        html: BlocklyGames.IS_HTML});
 

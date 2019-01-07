@@ -112,6 +112,7 @@ Music.init = function() {
   document.body.innerHTML = Music.soy.start({}, null,
       {lang: BlocklyGames.LANG,
        level: BlocklyGames.LEVEL,
+       scheme: Constants.ColorScheme,
        maxLevel: BlocklyGames.MAX_LEVEL,
        html: BlocklyGames.IS_HTML});
 

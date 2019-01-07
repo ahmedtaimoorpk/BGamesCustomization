@@ -1,13 +1,4 @@
 {
-	"@metadata": {
-		"authors": [
-			"Liuxinyu970226",
-			"McDutchie",
-			"Nike",
-			"Robby",
-			"Siebrand"
-		]
-	},
 	"Games.name": "The project name.",
 	"Games.puzzle": "title - Specifies that this is Blockly's '''Puzzle''' game.  Use the word for a jigsaw puzzle.\n{{Identical|Puzzle}}",
 	"Games.maze": "title - Specifies that this is Blockly's '''Maze''' game.\n{{Identical|Maze}}",
@@ -48,6 +39,7 @@
 	"Games.textVariable": "variable name - Default [https://github.com/google/blockly/wiki/Variables variable] representing a [https://github.com/google/blockly/wiki/Text piece of text].  This should be a single word, preferably short.\n{{Identical|Text}}",
 	"Games.breakLink": "Warning dialog. Options are 'OK' and 'Cancel'.",
 	"Games.blocks": "Label on a tab that contains blocks editor.\n{{Identical|Block}}",
+	"App.name": "App.RobotWala",
 	"Games.congratulations": "alert - This is displayed when the user solves the level.\n{{Identical|Congratulation}}",
 	"Games.helpAbort": "callout - This dialog gives the user the option to skip this level.",
 	"Index.clear": "Confirmation prompt for deleting all the user's data.",
@@ -79,6 +71,7 @@
 	"Puzzle.error1": "An encouraging error message displayed if the user placed all blocks except 1 correctly.\n\nIf the number of incorrect blocks is 2 or more, Puzzle.error2 is used instead.",
 	"Puzzle.error2": "An error message displayed if the user misplaced multiple blocks.\n\nParameters:\n* %1 - number of blocks incorrectly placed, which is always greater than 1 (or the message Puzzle.error1 would be used).",
 	"Puzzle.tryAgain": "A message indicating that a visually distinguished block is incorrect and that the user should try to fix it.\n\nThe use of a new line character is optional.",
+	"Games.puzzle.title": "Living Things",
 	"Puzzle.checkAnswers": "A label on a button the user can press to check his/her answers.",
 	"Puzzle.helpText": "Instructions for the puzzle.  For context, see [https://blockly-games.appspot.com/puzzle Blockly Puzzle].",
 	"Maze.moveForward": "block text - Imperative or infinitive of a verb for a person moving (walking) in the direction he/she is facing.",
@@ -191,6 +184,7 @@
 	"Movie.colourTooltip": "tooltip - Changes the colour of ink in the pen carried by the turtle.",
 	"Movie.setColour": "block text - Infinitive or imperative of a verb to specify the colour of the lines that should be drawn in the future by an imaginary pen.  This is followed by a block showing the colour",
 	"Movie.submitDisabled": "Error message.",
+	"Movie.movie": "Movie.ActivityLineMeasurement",
 	"Movie.galleryTooltip": "tooltip - Pressing this button opens a gallery of movies made by other users.",
 	"Movie.galleryMsg": "Label on a button that opens a gallery of movies made by other users.",
 	"Movie.submitTooltip": "tooltip - Pressing this button causes the movie created by the user's program to be submitted to a gallery for other people to see.",
@@ -262,14 +256,11 @@
 	"Pond.targetName": "Name for a player that does nothing.\n{{Identical|Target}}",
 	"Pond.pendulumName": "Name for a player that moves back and forth.\n{{Identical|Pendulum}}",
 	"Pond.scaredName": "Name for a player that is scared.\n{{Identical|Scared}}",
-	"Pond.helpUseScan": "Dialog telling user to seek a better answer.  Do not translate the word 'scan'.",
+	"Games.Pond.Tutor": "Games.pondTutor.Force",
 	"Pond.helpText1": "Instructions. Do not translate the word 'cannon'.",
 	"Pond.helpText2": "Instructions.  Do not translate 'while (true)'.",
 	"Pond.helpText3a": "Instructions.  Do not translate 'scan'.",
 	"Pond.helpText3b": "Instructions.  Do not translate 'cannon'.",
-	"Pond.helpText4": "Instructions.  Do not translate the word 'swim'.",
-	"Pond.helpText5": "Instructions.  Do not translate the word 'stop'.",
-	"Pond.helpText6": "Instructions.",
 	"Pond.rabbitName": "Name for a player that runs like a rabbit.\n{{Identical|Rabbit}}",
 	"Pond.counterName": "Name for a player that counts methodically.\n{{Identical|Counter}}",
 	"Pond.rookName": "Name for a player that behaves like a rook (castle) in chess.\n{{Identical|Rook}}",

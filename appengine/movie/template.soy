@@ -54,12 +54,13 @@
         <h1>
           {call BlocklyGames.soy.titleSpan}
             {param appName}
-              {msg meaning="Games.movie" desc="IBID"}Activity Line Measurement{/msg}
+              {msg meaning="Movie.movie" desc="Movie.ActivityLineMeasurement"}Activity Line Measurement{/msg}
             {/param}
           {/call}
           {call BlocklyGames.soy.levelLinks}
             {param level: $ij.level /}
             {param maxLevel: $ij.maxLevel /}
+            {param scheme: $ij.scheme /}
             {param lang: $ij.lang /}
             {param suffix}{/param}
           {/call}

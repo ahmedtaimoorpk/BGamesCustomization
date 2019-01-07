@@ -77,6 +77,7 @@ Turtle.init = function() {
   document.body.innerHTML = Turtle.soy.start({}, null,
       {lang: BlocklyGames.LANG,
        level: BlocklyGames.LEVEL,
+       scheme: Constants.ColorScheme,
        maxLevel: 4,
        html: BlocklyGames.IS_HTML});
 

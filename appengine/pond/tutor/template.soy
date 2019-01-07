@@ -34,12 +34,13 @@
         <h1>
           {call BlocklyGames.soy.titleSpan}
             {param appName}
-              {msg meaning="Games.pondTutor" desc="IBID"}Force{/msg}
+              {msg meaning="Games.Pond.Tutor" desc="Games.pondTutor.Force"}Force{/msg}
             {/param}
           {/call}
           {call BlocklyGames.soy.levelLinks}
             {param level: $ij.level /}
             {param maxLevel: $ij.maxLevel /}
+            {param scheme: $ij.scheme /}
             {param lang: $ij.lang /}
             {param suffix}{/param}
           {/call}

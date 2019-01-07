@@ -305,6 +305,7 @@ Bird.init = function() {
   document.body.innerHTML = Bird.soy.start({}, null,
       {lang: BlocklyGames.LANG,
        level: BlocklyGames.LEVEL,
+       scheme: Constants.ColorScheme,
        maxLevel: BlocklyGames.MAX_LEVEL,
        html: BlocklyGames.IS_HTML});
 

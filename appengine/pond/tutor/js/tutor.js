@@ -34,6 +34,7 @@ goog.require('Pond.Blocks');
 goog.require('Pond.Tutor.soy');
 goog.require('Pond.Visualization');
 goog.require('goog.math.Coordinate');
+goog.require('Constants');
 
 
 BlocklyGames.NAME = 'pond-tutor';
@@ -46,6 +47,7 @@ Pond.Tutor.init = function() {
   document.body.innerHTML = Pond.Tutor.soy.start({}, null,
       {lang: BlocklyGames.LANG,
        level: BlocklyGames.LEVEL,
+       scheme: Constants.ColorScheme,
        maxLevel: 3,
        html: BlocklyGames.IS_HTML});
 
