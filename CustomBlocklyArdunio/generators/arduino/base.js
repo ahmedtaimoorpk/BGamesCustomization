@@ -29,7 +29,9 @@ goog.require('Blockly.Arduino');
 
 
 Blockly.Arduino.base_delay = function () {
-    var delay_time = Blockly.Arduino.valueToCode(this, 'DELAY_TIME', Blockly.Arduino.ORDER_ATOMIC) || '1000'
+    var delay_time = Blockly.Arduino.valueToCode(this, 'DELAY_TIME', Blockly.Arduino.ORDER_ATOMIC) || '1';
+    // Milliseconds to Seconds
+    delay_time = delay_time * 1000;
     var code = 'delay(' + delay_time + ');\n';
     return code;
 };
@@ -89,7 +91,7 @@ Blockly.Arduino.inout_tone = function () {
 };
 
 Blockly.Arduino.inout_notone = function () {
-    var dropdown_pin = this.getFieldValue("PIN");
+    var dropdown_pin = '12';
     Blockly.Arduino.setups_['setup_output' + dropdown_pin] = 'pinMode(' + dropdown_pin + ', OUTPUT);';
     var code = "noTone(" + dropdown_pin + ");\n";
     return code;

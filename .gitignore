@@ -2,6 +2,7 @@
 *.pyc
 
 appengine/generated/
+closure-library
 appengine/*/generated/
 appengine/*/*/generated/
 appengine/third-party/

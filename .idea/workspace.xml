@@ -1,123 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47062e4d-03a9-4591-90b5-53ff58e2a92a" name="Default Changelist" comment="">
+    <list default="true" id="47062e4d-03a9-4591-90b5-53ff58e2a92a" name="Default Changelist" comment="Idea Changes">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/blockly-games.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blockly-games.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/bird/js/bird.js" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/bird/js/bird.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/bird/template.soy" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/bird/template.soy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/common/boot.js" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/common/boot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/js/lib-games.js" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/js/lib-games.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/maze/template.soy" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/maze/template.soy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/movie/js/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/movie/js/movie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/movie/template.soy" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/movie/template.soy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/music/js/music.js" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/music/js/music.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/music/template.soy" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/music/template.soy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/pond/tutor/js/tutor.js" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/pond/tutor/js/tutor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/pond/tutor/template.soy" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/pond/tutor/template.soy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/puzzle/template.soy" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/puzzle/template.soy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/template.soy" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/template.soy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/turtle/js/turtle.js" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/turtle/js/turtle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appengine/turtle/template.soy" beforeDir="false" afterPath="$PROJECT_DIR$/appengine/turtle/template.soy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extracted_msgs.xlf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ab.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ace.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/af.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ar.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/arz.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ast.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/az.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ba.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/be-tarask.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/be.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/bg.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/bn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/br.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ca.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/cdo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/cs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/da.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/de.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/diq.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/el.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/apps/blocklyduino/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/apps/blocklyduino/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/arduino_compressed.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/arduino_compressed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/blockly_compressed.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/blockly_compressed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/blockly_uncompressed.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/blockly_uncompressed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/blocks/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/blocks/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/blocks/logic.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/blocks/logic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/blocks/loops.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/blocks/loops.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/blocks/robotwala.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/blocks/robotwala.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/blocks_compressed.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/blocks_compressed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/control.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/control.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/robotwala.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/robotwala.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/az.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/bcc.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/bcc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/be-tarask.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/be-tarask.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/bn.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/bn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/br.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/hi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/hrx.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/hrx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ia.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ia.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/is.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/lb.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/lb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/lrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/lrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/mk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/oc.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/oc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/pms.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/pms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/sc.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/sc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/sq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/sr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ta.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ta.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/tl.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/tl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/tlh.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/tlh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/zh-hans.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/zh-hans.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/zh-hant.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/zh-hant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/en.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/qqq.json" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/qqq.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/tr.json" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/tr.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/msg/messages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomBlocklyArdunio/style/blocklycustom.css" beforeDir="false" afterPath="$PROJECT_DIR$/CustomBlocklyArdunio/style/blocklycustom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/eo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/es.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/et.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/eu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/fa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/fi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/fo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/fr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/frr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/gl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/gn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/hak.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/he.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/hi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/hrx.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/hu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ia.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/id.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/inh.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/is.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/it.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ja.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ka.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/kab.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/kbd-cyrl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/km.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ko.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ksh.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ku-latn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ky.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/la.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/lb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/lki.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/lrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/lt.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/lv.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/mg.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/mk.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ml.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/mr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ms.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/my.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/mzn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/nb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ne.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/nl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/oc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/olo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/pa.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/pl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/pms.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/pt-br.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/pt.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/qqq.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/qqq.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ro.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ru.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sco.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/si.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sk.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sq.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sr-latn.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sv.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/sw.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/ta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/tcy.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/te.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/th.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/tr.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/tr.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/uk.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/vi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/zh-hans.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/zh-hant.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,37 +89,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appengine/pond/tutor/template.soy">
+        <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-755">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+            <state relative-caret-position="578">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/apps/blocklyduino/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="392" column="30" selection-start-line="392" selection-start-column="21" selection-end-line="392" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/loops.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1530">
+              <caret line="90" column="35" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/appengine/js/lib-games.js">
+        <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/robotwala.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="114" column="14" lean-forward="true" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
+            <state relative-caret-position="299">
+              <caret line="33" selection-start-line="33" selection-end-line="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appengine/common/boot.js">
+        <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/control.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="35" column="80" lean-forward="true" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
+            <state relative-caret-position="145">
+              <caret line="96" column="59" selection-start-line="96" selection-start-column="59" selection-end-line="96" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appengine/puzzle/template.soy">
+        <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/robotwala.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="225" column="32" lean-forward="true" selection-start-line="225" selection-start-column="32" selection-end-line="225" selection-end-column="32" />
+            <state relative-caret-position="121">
+              <caret line="34" column="25" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/math.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -167,36 +164,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>levelLinks</find>
-      <find>level_done</find>
-      <find>level_don</find>
-      <find>ij.level == 2</find>
-      <find>Puzzle_animal</find>
-      <find>for (var</find>
-      <find>images</find>
-      <find>25.</find>
-      <find>picNum.</find>
-      <find>bg</find>
-      <find>1.png</find>
-      <find>Maze_move</find>
-      <find>Maze_moveForward</find>
-      <find>lang</find>
-      <find>links(</find>
-      <find>start</find>
-      <find>leve</find>
-      <find>links</find>
-      <find>level</find>
-      <find>init</find>
-      <find>scheme</find>
-      <find>constants</find>
-      <find>pond</find>
-      <find>ibid</find>
-      <find>Games.name</find>
-      <find>link</find>
-      <find>start(</find>
-      <find>Force</find>
-      <find>games.puzzle</find>
-      <find>Games.pondTutor</find>
+      <find>logic_compare</find>
+      <find>load_by_url</find>
+      <find>xml</find>
+      <find>&lt;button</find>
+      <find>&quot;,</find>
+      <find>PROCEDURES_DEFRETURN_TOOLTIP</find>
+      <find>CONTROLS_IF_HELPURL</find>
+      <find>/&quot;,</find>
+      <find>CONTROLS_IF_MSG_IF</find>
+      <find>Blockly.Msg.CONTROLS_IF_MSG_THEN = Blockly.Msg.CONTROLS_REPEAT_INPUT_DO;</find>
+      <find>controls_if</find>
+      <find>٪</find>
+      <find>%</find>
+      <find>base_delay_Tooltip</find>
+      <find>CONTROLS_IF_MSG_THEN</find>
+      <find>logic</find>
+      <find>controls_for</find>
+      <find>CONTROLS_FOR_TITLE</find>
+      <find>Blockly.Blocks.procedures.HUE</find>
+      <find>controls_repeat</find>
+      <find>CONTROL_DELAY</find>
+      <find>grove_motor_robotwala</find>
+      <find>distance</find>
+      <find>ORDER_ASSIGNMENT</find>
+      <find>base_delay</find>
+      <find>controls_whileUntil</find>
+      <find>math_number</find>
+      <find>On/OFF</find>
+      <find>onoff</find>
+      <find>inout_led</find>
     </findStrings>
     <replaceStrings>
       <replace>puzzle_blocks</replace>
@@ -211,6 +208,8 @@
       <replace>energysource.Blocks</replace>
       <replace>energysource.</replace>
       <replace>Energysource.</replace>
+      <replace>/&quot;,</replace>
+      <replace>&quot;,</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -219,10 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/appengine/maze/generated/en/soy.js" />
-        <option value="$PROJECT_DIR$/appengine/movie/js/answers.js" />
-        <option value="$PROJECT_DIR$/appengine/pond-tutor.html" />
-        <option value="$PROJECT_DIR$/appengine/js/lib-dialogs.js" />
         <option value="$PROJECT_DIR$/appengine/js/lib-interface.js" />
         <option value="$PROJECT_DIR$/appengine/music.html" />
         <option value="$PROJECT_DIR$/appengine/energysource/generated/en/uncompressed.js" />
@@ -237,7 +232,6 @@
         <option value="$PROJECT_DIR$/appengine/energysource/js/energysource.js" />
         <option value="$PROJECT_DIR$/appengine/energysource/template.soy" />
         <option value="$PROJECT_DIR$/appengine/generated/en/soy.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/appengine/maze/js/maze.js" />
         <option value="$PROJECT_DIR$/appengine/maze/js/blocks.js" />
         <option value="$PROJECT_DIR$/appengine/maze/template.soy" />
@@ -255,17 +249,34 @@
         <option value="$PROJECT_DIR$/appengine/movie/template.soy" />
         <option value="$PROJECT_DIR$/appengine/pond/tutor/template.soy" />
         <option value="$PROJECT_DIR$/appengine/puzzle/template.soy" />
-        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/appengine/common/boot.js" />
         <option value="$PROJECT_DIR$/appengine/js/lib-games.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/base.js" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/robotwala.js" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/blocks/base.js" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/msg/messages.js" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/blocks/logic.js" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/style/blocklycustom.css" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/en.js" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ur.js" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/blocks/robotwala.js" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/apps/blocklyduino/index.html" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/json/en.json" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/en.json" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/tr.json" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/ur.json" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/blocks/loops.js" />
+        <option value="$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/control.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="331" />
-    <option name="y" value="132" />
-    <option name="width" value="789" />
-    <option name="height" value="575" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -280,13 +291,45 @@
         <subPane>
           <expand>
             <path>
-              <item name="blocklygames (copy)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blocklygames (copy)" type="462c0819:PsiDirectoryNode" />
+              <item name="BGamesCustomization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BGamesCustomization" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="blocklygames (copy)" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blocklygames (copy)" type="462c0819:PsiDirectoryNode" />
-              <item name="appengine" type="462c0819:PsiDirectoryNode" />
+              <item name="BGamesCustomization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BGamesCustomization" type="462c0819:PsiDirectoryNode" />
+              <item name="CustomBlocklyArdunio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BGamesCustomization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BGamesCustomization" type="462c0819:PsiDirectoryNode" />
+              <item name="CustomBlocklyArdunio" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BGamesCustomization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BGamesCustomization" type="462c0819:PsiDirectoryNode" />
+              <item name="CustomBlocklyArdunio" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="blocklyduino" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BGamesCustomization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BGamesCustomization" type="462c0819:PsiDirectoryNode" />
+              <item name="CustomBlocklyArdunio" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BGamesCustomization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BGamesCustomization" type="462c0819:PsiDirectoryNode" />
+              <item name="CustomBlocklyArdunio" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BGamesCustomization" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BGamesCustomization" type="462c0819:PsiDirectoryNode" />
+              <item name="CustomBlocklyArdunio" type="462c0819:PsiDirectoryNode" />
+              <item name="generators" type="462c0819:PsiDirectoryNode" />
+              <item name="arduino" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -301,7 +344,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -340,6 +383,16 @@
       <workItem from="1546235784345" duration="4647000" />
       <workItem from="1546242187473" duration="5048000" />
       <workItem from="1546612663521" duration="2458000" />
+      <workItem from="1546841107618" duration="672000" />
+      <workItem from="1546841862845" duration="13492000" />
+      <workItem from="1546921775130" duration="22722000" />
+      <workItem from="1547010428524" duration="14748000" />
+      <workItem from="1547100191753" duration="26000" />
+      <workItem from="1547442264654" duration="7872000" />
+      <workItem from="1547450946203" duration="1933000" />
+      <workItem from="1547460664372" duration="597000" />
+      <workItem from="1548050468990" duration="658000" />
+      <workItem from="1548052014055" duration="436000" />
     </task>
     <task id="LOCAL-00001" summary="Major changes">
       <created>1544439262512</created>
@@ -373,17 +426,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18838000" />
+    <option name="totallyTimeSpent" value="81994000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="-11" width="1311" height="780" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2098179" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23903178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32972974" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -393,7 +445,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32868218" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.40939596" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.28985506" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -412,320 +464,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Idea Changes" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/appengine/energysource/bee.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/puzzle/generated/en/compressed.js" />
-    <entry file="file://$PROJECT_DIR$/appengine/energysource.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="79" selection-start-line="7" selection-start-column="79" selection-end-line="7" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/energysource/generated/en/compressed.js" />
-    <entry file="file://$PROJECT_DIR$/appengine/third-party/blockly/core/workspace.js" />
-    <entry file="file://$PROJECT_DIR$/appengine/puzzle/js/blocks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="197" column="7" lean-forward="true" selection-start-line="197" selection-start-column="7" selection-end-line="198" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/energysource/js/energysource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/js/lib-dialogs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6525">
-          <caret line="435" column="51" selection-start-line="435" selection-start-column="36" selection-end-line="435" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/index/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/energysource/js/blocks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/energysource/template.soy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1709">
-          <caret line="408" column="50" selection-start-line="408" selection-start-column="50" selection-end-line="408" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/maze.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/generated/en/soy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="34" column="3" lean-forward="true" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/maze/generated/en/soy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="e#120#126#1" expanded="true" />
-            <element signature="e#238#244#1" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#td#1;n#tr#0;n#table#1;n#!!top" expanded="true" />
-            <element signature="e#105#111#1" expanded="true" />
-            <element signature="e#423#429#1" expanded="true" />
-            <element signature="e#108#114#1" expanded="true" />
-            <element signature="e#110#116#1" expanded="true" />
-            <element signature="n#style#0;n#xml#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/js/lib-constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-547" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/maze/js/blocks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/third-party/blockly/msg/js/en.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="159" column="41" selection-start-line="159" selection-start-column="41" selection-end-line="159" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/maze/generated/en/msg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/maze/templatetr.soy">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/bird/sources/birds-800.xcf">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/i18n/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/turtle/template.soy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/turtle/js/turtle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="79" column="7" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
-          <folding>
-            <element signature="e#1410#1465#0" />
-            <element signature="e#1490#1566#0" />
-            <element signature="e#5657#5877#0" />
-            <element signature="e#5913#10499#0" />
-            <element signature="e#10689#10874#0" />
-            <element signature="e#10877#10909#0" />
-            <element signature="e#10939#11635#0" />
-            <element signature="e#11700#11925#0" />
-            <element signature="e#13155#13372#0" />
-            <element signature="e#13502#14196#0" />
-            <element signature="e#14306#16694#0" />
-            <element signature="e#16829#17378#0" />
-            <element signature="e#17516#17997#0" />
-            <element signature="e#18227#20249#0" />
-            <element signature="e#20335#20774#0" />
-            <element signature="e#20881#21666#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/music/template.soy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/music/js/music.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="114" column="8" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/bird/js/bird.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="307" column="7" lean-forward="true" selection-start-line="307" selection-start-column="7" selection-end-line="307" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/pond/js/avatar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/pond/js/battle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/puzzle/js/puzzle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/pond/duck/template.soy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/pond/js/visualization.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/bird/template.soy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/pond/js/pond.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2400">
-          <caret line="160" column="29" selection-start-line="160" selection-start-column="29" selection-end-line="160" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/pond/tutor/js/tutor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2685">
-          <caret line="179" column="49" selection-start-line="179" selection-start-column="49" selection-end-line="179" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/pond/duck/js/duck.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="84" column="52" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/maze/template.soy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/maze/js/maze.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding>
-            <element signature="e#22282#30259#0" />
-            <element signature="e#30392#30635#0" />
-            <element signature="e#30721#31028#0" />
-            <element signature="e#31166#32089#0" />
-            <element signature="e#32224#32608#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/movie/template.soy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="62" column="40" lean-forward="true" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/movie/js/movie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="68" column="44" selection-start-line="68" selection-start-column="38" selection-end-line="68" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/pond/template.soy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="18" column="257" selection-start-line="18" selection-start-column="253" selection-end-line="18" selection-end-column="257" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="97" column="16" lean-forward="true" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/common/boot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="35" column="80" lean-forward="true" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/template.soy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="24" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appengine/index/js/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -741,13 +479,6 @@
         <state relative-caret-position="-1006" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appengine/puzzle/template.soy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="225" column="32" lean-forward="true" selection-start-line="225" selection-start-column="32" selection-end-line="225" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appengine/js/lib-interface.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -755,17 +486,306 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/appengine/common/boot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="80" selection-start-line="35" selection-start-column="80" selection-end-line="35" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appengine/puzzle/template.soy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3825">
+          <caret line="225" column="32" selection-start-line="225" selection-start-column="32" selection-end-line="225" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/appengine/pond/tutor/template.soy">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-755">
+        <state relative-caret-position="535">
           <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/appengine/js/lib-games.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="114" column="14" lean-forward="true" selection-start-line="114" selection-start-column="14" selection-end-line="114" selection-end-column="14" />
+        <state relative-caret-position="79">
+          <caret line="87" column="29" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/i18n/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="63" column="29" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/el.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/bn.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ca.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="16" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/en_us.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="136" column="32" selection-start-line="136" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/tr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6829">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/apps/blocklyduino/Blob.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-337">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blockly_compressed.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="1228" column="266" selection-start-line="1228" selection-start-column="266" selection-end-line="1228" selection-end-column="266" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/style/blocklycustom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2890">
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/apps/blocklyduino/blockly_helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3145">
+          <caret line="185" column="14" selection-start-line="185" selection-start-column="14" selection-end-line="185" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="458" selection-start-line="458" selection-end-line="458" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/variables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/text.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/lists.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/grove.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/colour.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/msg/js/ur.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="44" column="73" selection-start-line="44" selection-start-column="73" selection-end-line="44" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/procedures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="43" column="48" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/logic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/core/blocks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/core/blockly.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/core/block.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="135" column="2" selection-start-line="135" selection-start-column="2" selection-end-line="135" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/msg/messages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-335">
+          <caret line="219" column="69" selection-start-line="219" selection-start-column="69" selection-end-line="219" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/build.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3943">
+          <caret line="440" column="10" selection-start-line="440" selection-start-column="6" selection-end-line="440" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/logic.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2371" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/procedures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/math.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="45" column="64" selection-start-line="43" selection-start-column="8" selection-end-line="45" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/ur.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/en.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="274" column="4" selection-start-line="274" selection-start-column="4" selection-end-line="274" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/tr.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="382" column="36" selection-start-line="382" selection-start-column="36" selection-end-line="382" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/ur.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="460" column="40" selection-start-line="460" selection-start-column="40" selection-end-line="460" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/msg/json/en.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="461" column="38" lean-forward="true" selection-start-line="461" selection-start-column="38" selection-end-line="461" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/loops.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="90" column="35" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/math.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/control.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="96" column="59" selection-start-line="96" selection-start-column="59" selection-end-line="96" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/apps/blocklyduino/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="392" column="30" selection-start-line="392" selection-start-column="21" selection-end-line="392" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/blocks/robotwala.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomBlocklyArdunio/generators/arduino/robotwala.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="33" selection-start-line="33" selection-end-line="34" />
         </state>
       </provider>
     </entry>

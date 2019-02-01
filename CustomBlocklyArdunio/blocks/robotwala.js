@@ -29,21 +29,21 @@
 goog.provide('Blockly.Blocks.robotwala');
 
 goog.require('Blockly.Blocks');
-Blockly.Blocks.robotwala.Color = '#6b356b';
+Blockly.Blocks.robotwala.Color = 290;
 
 
 Blockly.Blocks['inout_led'] = {
     helpUrl: 'http://arduino.cc/en/Reference/DigitalWrite',
     init: function () {
-        this.setColour(Blockly.Blocks.robotwala.Color);
+        this.setColour(176);
         this.appendDummyInput()
-            .appendField("LED PIN#")
-            .appendField(new Blockly.FieldDropdown(profile.default.digital), "PIN")
-            .appendField("Stat")
+            .appendField("LED")
+            // .appendField(new Blockly.FieldDropdown(profile.default.digital), "PIN")
+            // .appendField("Stat")
             .appendField(new Blockly.FieldDropdown([["ON", "ON"], ["OFF", "OFF"]]), "STAT");
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setTooltip('Write digital value to a specific Port');
+        this.setTooltip(Blockly.Msg.inout_led_Tooltip);
     }
 };
 
@@ -51,7 +51,7 @@ Blockly.Blocks['inout_led'] = {
 Blockly.Blocks['inout_fan'] = {
     helpUrl: 'http://arduino.cc/en/Reference/DigitalWrite',
     init: function () {
-        this.setColour(Blockly.Blocks.robotwala.Color);
+            this.setColour(176);
         this.appendDummyInput()
             .appendField("FAN PIN#")
             .appendField(new Blockly.FieldDropdown(profile.default.digital), "PIN")
@@ -59,7 +59,7 @@ Blockly.Blocks['inout_fan'] = {
             .appendField(new Blockly.FieldDropdown([["ON", "ON"], ["OFF", "OFF"]]), "STAT");
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setTooltip('Write digital value to a specific Port');
+        this.setTooltip(Blockly.Msg.inout_led_Tooltip);
     }
 };
 
@@ -69,15 +69,17 @@ Blockly.Blocks['inout_line_sensor'] = {
     init: function () {
         this.setColour(Blockly.Blocks.robotwala.Color);
         this.appendDummyInput()
-            .appendField("Line Sensor - ")
+            .appendField(Blockly.Msg.inout_line_sensor_Field_lineSensor)
             // .appendField(new Blockly.FieldDropdown(profile.default.digital), "PIN")
-            .appendField("Sense")
+            .appendField(new Blockly.FieldImage("../../media/Line senor-01.png", 64, 64));
+        this.appendDummyInput()
+            .appendField(Blockly.Msg.Sense)
             .appendField(new Blockly.FieldDropdown([["BLACK", "BLACK"], ["WHITE", "WHITE"]]), "STAT");
         this.setPreviousStatement(false, null);
         this.setNextStatement(false, null);
         this.setOutput(true);
 
-        this.setTooltip('Write digital value to a specific Port');
+        this.setTooltip(Blockly.Msg.inout_led_Tooltip);
     }
 };
 
@@ -87,13 +89,34 @@ Blockly.Blocks['inout_fire_sensor'] = {
     init: function () {
         this.setColour(Blockly.Blocks.robotwala.Color);
         this.appendDummyInput()
-            .appendField("Flame Sensor - PIN #")
-            .appendField(new Blockly.FieldDropdown(profile.default.digital), "PIN");
+            .appendField(Blockly.Msg.inout_fire_sensor_Field)
+            // .appendField(new Blockly.FieldDropdown(profile.default.digital), "PIN");
+        .appendField(new Blockly.FieldImage("../../media/FLAME-SENSOR-01 V2.png", 64, 64))
         this.setPreviousStatement(false, null);
         this.setNextStatement(false, null);
         this.setOutput(true);
 
-        this.setTooltip('Write digital value to a specific Port');
+        this.setTooltip(Blockly.Msg.inout_led_Tooltip);
+    }
+};
+/**
+ * Moisture Sensor
+ * @type {{init: Blockly.Blocks.inout_moisture_sensor.init, helpUrl: string}}
+ */
+Blockly.Blocks['inout_moisture_sensor'] = {
+    helpUrl: 'http://arduino.cc/en/Reference/DigitalWrite',
+    init: function () {
+        this.setColour(Blockly.Blocks.robotwala.Color);
+        this.appendDummyInput()
+            .appendField(Blockly.Msg.inout_moisture_sensor_Field)
+            // .appendField(new Blockly.FieldDropdown(profile.default.digital), "PIN")
+            .appendField(Blockly.Msg.Sense)
+            .appendField(new Blockly.FieldDropdown([["WET", "WET"], ["DRY", "DRY"]]), "STAT");
+        this.setPreviousStatement(false, null);
+        this.setNextStatement(false, null);
+        this.setOutput(true);
+
+        this.setTooltip(Blockly.Msg.inout_led_Tooltip);
     }
 };
 
@@ -107,20 +130,20 @@ Blockly.Blocks['ultrasonic_read_distance'] = {
     init: function () {
         this.setColour(Blockly.Blocks.robotwala.Color);
         this.appendDummyInput()
-            .appendField("Ultrasonic: ")
-            .appendField("Trigger#")
+            .appendField(Blockly.Msg.ultrasonic_read_distance_Field1)
+            .appendField(Blockly.Msg.ultrasonic_read_distance_Field2)
             .appendField(new Blockly.FieldDropdown(profile.default.digital), "trigger");
         this.appendDummyInput()
-            .appendField("Ultrasonic: ")
-            .appendField("Echo#")
+            .appendField(Blockly.Msg.ultrasonic_read_distance_Field1)
+            .appendField(Blockly.Msg.ultrasonic_read_distance_Field3)
             .appendField(new Blockly.FieldDropdown(profile.default.digital), "echo");
         this.appendDummyInput()
             .setAlign(Blockly.ALIGN_RIGHT)
-            .appendField("Read Distance");
+            .appendField(Blockly.Msg.ultrasonic_read_distance_Field4);
         this.setOutput(true);
         // this.setPreviousStatement(true, null);
         // this.setNextStatement(true, null);
-        this.setTooltip('return that degree with the last servo move.');
+        this.setTooltip(Blockly.Msg.ultrasonic_read_distance_Tooltip);
     }
 };
 
@@ -132,12 +155,13 @@ Blockly.Blocks['ultrasonic_read_distance_robotwala'] = {
     init: function () {
         this.setColour(Blockly.Blocks.robotwala.Color);
         this.appendDummyInput()
-            .appendField("Ultrasonic Distance: ");
+            .appendField(Blockly.Msg.ultrasonic_read_distance_robotwala_Field)
+            .appendField(new Blockly.FieldImage("../../media/ultrasonic-sensor 1-01.png", 64, 64));
 
         this.setOutput(true);
         // this.setPreviousStatement(true, null);
         // this.setNextStatement(true, null);
-        this.setTooltip('return that degree with the last servo move.');
+        this.setTooltip(Blockly.Msg.ultrasonic_read_distance_Tooltip);
     }
 };
 
@@ -149,21 +173,21 @@ Blockly.Blocks['servo_move_robotwala'] = {
     init: function () {
         this.setColour(Blockly.Blocks.robotwala.Color);
         this.appendDummyInput()
-            .appendField("Servo")
+            .appendField(Blockly.Msg.servo_move_robotwala_Field1)
             .appendField(new Blockly.FieldImage("https://statics3.seeedstudio.com/images/product/EMAX%20Servo.jpg", 64, 64))
-            .appendField("PIN#")
+            .appendField(Blockly.Msg.servo_move_robotwala_Field2)
             .appendField(new Blockly.FieldDropdown(profile.default.digital), "PIN")
-            .appendField("Steps")
+            .appendField(Blockly.Msg.servo_move_robotwala_Field3)
             .appendField(new Blockly.FieldTextInput(''), "Steps")
-            .appendField("Delay (Millisecods)")
+            .appendField(Blockly.Msg.servo_move_robotwala_Field4)
             .appendField(new Blockly.FieldTextInput(''), "delay");
         this.appendValueInput("DEGREE", 'Number')
             .setCheck('Number')
             .setAlign(Blockly.ALIGN_RIGHT)
-            .appendField("Degree (0~180)");
+            .appendField(Blockly.Msg.servo_move_robotwala_Field5);
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setTooltip('move between 0~180 degree');
+        this.setTooltip(Blockly.Msg.servo_move_robotwala_Tooltip);
     }
 };
 
@@ -171,21 +195,21 @@ Blockly.Blocks['servo_move_robotwala'] = {
 Blockly.Blocks['motor_turn_robotwala'] = {
     helpUrl: 'http://www.seeedstudio.com/wiki/Motor_Shield',
     init: function () {
-        this.setColour(Blockly.Blocks.robotwala.Color);
+        this.setColour(190);
 
         this.appendDummyInput()
-            .appendField("Turn Robot")
+            .appendField(Blockly.Msg.motor_turn_robotwala_Field1)
             .appendField(new Blockly.FieldImage("../../media/motor.png", 64, 64));
 
         this.appendDummyInput()
-            .appendField("Turn Motor")
+            .appendField(Blockly.Msg.motor_turn_robotwala_Field2)
             .appendField(new Blockly.FieldAngle(0), "ANGEL");
 
         this.appendDummyInput().appendField("Direction")
             .appendField(new Blockly.FieldDropdown([["Right", "right"], ["Left", "left"]]), "DIRECTION");
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setTooltip('Drive two brushed DC motors');
+        this.setTooltip(Blockly.Msg.motor_turn_robotwala_Tooltip);
     }
 };
 
@@ -193,17 +217,17 @@ Blockly.Blocks['motor_turn_robotwala'] = {
 Blockly.Blocks['grove_motor_robotwala'] = {
     helpUrl: 'http://www.seeedstudio.com/wiki/Motor_Shield',
     init: function () {
-        this.setColour(Blockly.Blocks.robotwala.Color);
+        this.setColour(190);
         this.appendDummyInput()
 
 
-            .appendField("Motor")
+            .appendField(Blockly.Msg.grove_motor_robotwala_Field1)
             .appendField(new Blockly.FieldImage("../../media/motor.png", 64, 64))
             .appendField(new Blockly.FieldDropdown([["Stop", "stop"], ["Forward", "forward"], ["Right", "right"], ["Left", "left"], ["Backward", "backward"]]), "DIRECTION");
-        this.appendDummyInput().appendField("Speed motor a")
+        this.appendDummyInput().appendField(Blockly.Msg.grove_motor_robotwala_Field2)
             .appendField(new Blockly.FieldTextInput('150',
                 Blockly.FieldTextInput.numberValidator), 'SPEEDA');
-        this.appendDummyInput().appendField("Speed motor b")
+        this.appendDummyInput().appendField(Blockly.Msg.grove_motor_robotwala_Field3)
             .appendField(new Blockly.FieldTextInput('150',
                 Blockly.FieldTextInput.numberValidator), 'SPEEDB');
 
@@ -217,6 +241,6 @@ Blockly.Blocks['grove_motor_robotwala'] = {
         //      .appendField("Speed motor b");
         this.setPreviousStatement(true, null);
         this.setNextStatement(true, null);
-        this.setTooltip('Drive two brushed DC motors');
+        this.setTooltip(Blockly.Msg.grove_motor_robotwala_Tooltip);
     }
 };

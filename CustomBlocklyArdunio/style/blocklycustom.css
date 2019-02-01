@@ -151,7 +151,7 @@ button:hover {
     position: fixed;
     top: 2px;
     z-index: 999;
-    left: 60%;
+    left: 55%;
 }
 
 .optionsButton > button {

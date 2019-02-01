@@ -34,6 +34,7 @@ goog.require('Blockly.Blocks');
  */
 // Blockly.Blocks.logic.HUE = 210;
 Blockly.Blocks.logic.HUE = '#00c1d5';
+Blockly.Blocks.logic.HUE2 = "#14A098";
 
 Blockly.Blocks['controls_if'] = {
     /**
@@ -45,9 +46,9 @@ Blockly.Blocks['controls_if'] = {
         this.setHelpUrl(Blockly.Msg.CONTROLS_IF_HELPURL);
         this.appendValueInput('IF0')
             .setCheck('Boolean')
-            .appendField('if /اگر ');
+            .appendField(Blockly.Msg.CONTROLS_IF_MSG_IF );
         this.appendStatementInput('DO0')
-            .appendField('do / کرو');
+            .appendField(Blockly.Msg.CONTROLS_IF_MSG_THEN);
         this.setPreviousStatement(true);
         this.setNextStatement(true);
         this.setMutator(new Blockly.Mutator(['controls_if_elseif',
@@ -98,13 +99,13 @@ Blockly.Blocks['controls_if'] = {
         for (var i = 1; i <= this.elseifCount_; i++) {
             this.appendValueInput('IF' + i)
                 .setCheck('Boolean')
-                .appendField('else if /  ورنہ اگر ');
+                .appendField(Blockly.Msg.CONTROLS_IF_MSG_ELSEIF);
             this.appendStatementInput('DO' + i)
-                .appendField('do / کرو ');
+                .appendField(Blockly.Msg.CONTROLS_IF_MSG_THEN);
         }
         if (this.elseCount_) {
             this.appendStatementInput('ELSE')
-                .appendField('else / ورنہ ');
+                .appendField(Blockly.Msg.CONTROLS_IF_MSG_ELSE);
         }
     },
     /**
@@ -283,7 +284,7 @@ Blockly.Blocks['logic_compare'] = {
             ['\u2265', 'GTE']
         ];
         this.setHelpUrl(Blockly.Msg.LOGIC_COMPARE_HELPURL);
-        this.setColour(Blockly.Blocks.logic.HUE);
+        this.setColour(Blockly.Blocks.logic.HUE2);
         this.setOutput(true, 'Boolean');
         this.appendValueInput('A');
         this.appendValueInput('B')

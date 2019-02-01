@@ -1,11 +1,82 @@
-<html manifest=node.manifest>
+<html ng-app="myApp" ng-controller="myCtrl" manifest=node.manifest>
 <head>
     <meta charset="utf-8">
     <title>RobotWala</title>
     <script type="text/javascript" src="../../blockly_compressed.js?v=14"></script>
     <script type="text/javascript" src="../../blocks_compressed.js?v=14"></script>
     <script type="text/javascript" src="../../arduino_compressed.js?v=14"></script>
-    <script type="text/javascript" src="../../msg/js/en.js?v=12"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script>
+        var app = angular.module("myApp", []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.logic = "Logic";
+            $scope.math = "Math";
+            $scope.sensor = "Sensors";
+            $scope.onoff = "On/OFF";
+            $scope.motor = "MOTOR";
+            $scope.control = "Controls";
+            $scope.audio = "Audio";
+            $scope.text = "Text";
+            $scope.functions = "Functions";
+            $scope.variables = "Variables";
+            $scope.upload = "Upload";
+            $scope.clear_all = "Clear All";
+            $scope.save_code = "Save Code";
+            $scope.load_code = "Load Code";
+
+            if (dest == 'tr') {
+                $scope.logic = "Mantık";
+                $scope.math = "Matematik";
+                $scope.sensor = "Sensörler";
+                $scope.onoff = "Açık/kapalı";
+                $scope.motor = "MOTOR";
+                $scope.control = "Kontroller";
+                $scope.audio = "Ses";
+                $scope.text = "Metin";
+                $scope.functions = "Fonksiyonlar";
+                $scope.variables = "Değişkenler";
+                $scope.upload = "Yükleme";
+                $scope.clear_all = "Hepsini temizle";
+                $scope.save_code = "Kodu kaydet";
+                $scope.load_code = "Yük kodu";
+
+            } else if (dest == 'ur') {
+                $scope.logic = "Logic/منطق";
+                $scope.math = "Math/ریاضی";
+                $scope.sensor = "Sensors/سینسر";
+                $scope.onoff = "On/OFF/آن/آف";
+                $scope.motor = "MOTOR/موٹر";
+                $scope.control = "Controls/کنٹرول";
+                $scope.audio = "Audio/آڈیو";
+                $scope.text = "Text/متن";
+                $scope.functions = "Functions/فنکشن";
+                $scope.variables = "Variables/متغیرات";
+                $scope.upload = "Upload/اپ لوڈ";
+                $scope.clear_all = "Clear All/سب صاف";
+                $scope.save_code = "Save Code/کوڈ محفوظ";
+                $scope.load_code = "Load Code/لوڈ کوڈ";
+            }
+
+
+        })
+        ;
+    </script>
+
+    <script>
+        var dest = unescape(location.search.replace(/^.*\=/, '')).replace(/\+/g, " ");
+        var lang = '../../msg/js/en.js?v=12';
+        if (dest == 'tr') {
+            lang = '../../msg/js/tr.js?v=12';
+        } else if (dest == 'ur') {
+            lang = '../../msg/js/ur.js?v=12';
+        }
+
+        var script = document.createElement('script');
+        script.src = lang;
+        document.head.appendChild(script);
+    </script>
+
+    <!--<script type="text/javascript" src=lang></script>-->
     <script type="text/javascript" src="Blob.js"></script>
     <script type="text/javascript" src="spin.js"></script>
     <script type="text/javascript" src="FileSaver.min.js"></script>
@@ -182,10 +253,11 @@
 
             //load from url parameter (single param)
             //http://stackoverflow.com/questions/2090551/parse-query-string-in-javascript
-            var dest = unescape(location.search.replace(/^.*\=/, '')).replace(/\+/g, " ");
-            if (dest) {
-                load_by_url(dest);
-            }
+            // var dest = unescape(location.search.replace(/^.*\=/, '')).replace(/\+/g, " ");
+            // if (dest) {
+            //     console.log(dest);
+            //     // load_by_url(dest);
+            // }
         }
     </script>
 
@@ -219,12 +291,12 @@
                         XML
                     </td>
                     <td class="tabmax arduniobtns">
-                        <button type="button" onclick="uploadClick()">Upload</button>
+                        <button type="button" onclick="uploadClick()">{{upload}}</button>
                         <!--button type="button" onclick="resetClick()">Reset</button-->
-                        <button onclick="discard()">Clear all</button>
+                        <button onclick="discard()">{{clear_all}}</button>
                         <!--button onclick="saveCode()">Save Arduino Code</button-->
-                        <button onclick="save()">Save Code</button>
-                        <button id="fakeload">Load Code</button>
+                        <button onclick="save()">{{save_code}}</button>
+                        <button id="fakeload">{{load_code}}</button>
                         <input type="file" id="load" style="display: none;"/>
                         <!--button class="launch" onclick="runJS()">Run Program</button-->
                     </td>
@@ -240,37 +312,36 @@
 </table>
 
 <div class="optionsButton">
-    <button type="button" onclick="uploadClick()">Upload</button>
+    <button type="button" onclick="uploadClick()">{{upload}}</button>
     <!--button type="button" onclick="resetClick()">Reset</button-->
-    <button onclick="discard()">Clear all</button>
+    <button onclick="discard()">{{clear_all}}</button>
     <!--button onclick="saveCode()">Save Arduino Code</button-->
-    <button onclick="save()">Save Code</button>
-    <button id="fakeload">Load Code</button>
+    <button onclick="save()">{{save_code}}</button>
+    <button id="fakeload">{{load_code}}</button>
+
 </div>
 <div id="content_blocks" class="content"></div>
 <textarea id="content_arduino" class="content" readonly wrap="off"></textarea>
 <textarea id="content_xml" class="content" wrap="off"></textarea>
 
 <xml id="toolbox" style="display: none">
-    <category name="Logic" color="#333">
-        <block type="controls_if">
-        </block>
+    <category name="{{logic}}" color="#333">
+        <block type="controls_if"></block>
         <block type="controls_if">
             <mutation else="1"></mutation>
         </block>
         <block type="controls_if">
             <mutation elseif="1" else="1"></mutation>
         </block>
-        <block type="logic_compare"></block>
         <block type="logic_operation"></block>
         <block type="logic_negate"></block>
         <block type="logic_null"></block>
     </category>
-    <category name="Control" color="120">
+    <category name="{{control}}" color="120">
         <block type="base_delay">
             <value name="DELAY_TIME">
                 <block type="math_number">
-                    <field name="NUM">1000</field>
+                    <field name="NUM">1</field>
                 </block>
             </value>
         </block>
@@ -287,10 +358,12 @@
             </value>
         </block>
         <block type="controls_whileUntil"></block>
+        <block type="controls_while_repeat"></block>
     </category>
-    <category name="Math">
+    <category name="{{math}}">
         <block type="math_number"></block>
         <block type="math_arithmetic"></block>
+        <block type="logic_compare"></block>
         <block type="base_map">
             <value name="DMAX">
                 <block type="math_number">
@@ -299,13 +372,13 @@
             </value>
         </block>
     </category>
-    <category name="Text">
+    <category name="{{text}}">
         <block type="text"></block>
     </category>
-    <category name="Variables" custom="VARIABLE"></category>
-    <category name="Functions" custom="PROCEDURE"></category>
+    <category name="{{variables}}" custom="VARIABLE"></category>
+    <category name="{{functions}}" custom="PROCEDURE"></category>
     <sep></sep>
-    <category name="On / Off">
+    <category name="{{onoff}}">
         <block type="inout_highlow"></block>
         <block type="inout_digital_write"></block>
         <block type="inout_digital_read"></block>
@@ -316,48 +389,49 @@
                 </block>
             </value>
         </block>
-
-
-        <block type="inout_analog_read">
-
-        </block>
-                  <block type="inout_led"></block>
-
+        <block type="inout_analog_read"></block>
+        <block type="inout_led"></block>
+        <block type="inout_fan"></block>
 
 
     </category>
-    <category name="Sensors" colour="121">
+    <category name="{{sensor}}" colour="121">
         <block type="inout_line_sensor"></block>
         <block type="inout_fire_sensor"></block>
-        <block type="inout_fan"></block>
-    </category>
-    <category name="Motor" colour="121">
-        <block type="inout_highlow"></block>
-        <block type="inout_digital_write"></block>
-        <block type="inout_buildin_led"></block>
-        <block type="grove_motor_robotwala">
-        </block>
-        <block type="motor_turn_robotwala">
-        </block>
-        <block type="controls_if">
-            <value name="IF0">
-                <block type="logic_compare">
-                    <value name="A">
-                        <block type="ultrasonic_read_distance_robotwala">
-                        </block>
-                    </value>
-                    <value name="B">
-                        <block type="math_number">
-                            <field name="NUM">0</field>
-                        </block>
-                    </value>
+        <block type="inout_moisture_sensor"></block>
+
+        <block type="logic_compare">
+            <value name="A">
+                <block type="ultrasonic_read_distance_robotwala">
+                </block>
+            </value>
+            <value name="B">
+                <block type="math_number">
+                    <field name="NUM">0</field>
                 </block>
             </value>
         </block>
 
+
+    </category>
+    <category name="{{motor}}" colour="121">
+        <!--<block type="inout_highlow"></block>-->
+        <!--<block type="inout_digital_write"></block>-->
+        <!--<block type="inout_buildin_led"></block>-->
+        <block type="grove_motor_robotwala"></block>
+        <block type="motor_turn_robotwala"></block>
+        <block type="servo_move">
+            <value name="DEGREE">
+                <block type="math_number">
+                    <field name="NUM">0</field>
+                </block>
+            </value>
+        </block>
+        <block type="servo_read_degrees"></block>
+
     </category>
 
-    <category name="Audio" colour="121">
+    <category name="{{audio}}" colour="121">
         <block type="inout_tone">
 
         </block>
@@ -368,18 +442,8 @@
     </category>
 
 
-    <category name="Servo">
-        <block type="servo_move">
-            <value name="DEGREE">
-                <block type="math_number">
-                    <field name="NUM">0</field>
-                </block>
-            </value>
-        </block>
-        <block type="servo_read_degrees"></block>
-    </category>
-
-
 </xml>
+
 </body>
 </html>
+

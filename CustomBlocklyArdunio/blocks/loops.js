@@ -119,6 +119,28 @@ Blockly.Blocks['controls_whileUntil'] = {
   }
 };
 
+Blockly.Blocks['controls_while_repeat'] = {
+  /**
+   * Block for 'controls_while_repeat' loop.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.setColour(Blockly.Blocks.loops.HUE);
+    this.appendDummyInput()
+            .appendField(Blockly.Msg.controls_while_repeat)
+            .appendField(new Blockly.FieldTextInput('1',
+                Blockly.FieldTextInput.numberValidator), 'NUM');
+
+    this.appendStatementInput('DO')
+        .appendField(Blockly.Msg.controls_while_repeat_do);
+    this.setPreviousStatement(true);
+    this.setNextStatement(true);
+    // Assign 'this' to a variable for use in the tooltip closure below.
+    var thisBlock = this;
+    this.setTooltip(Blockly.Msg.base_delay_Tooltip);
+  }
+};
+
 Blockly.Blocks['controls_for'] = {
   /**
    * Block for 'for' loop.

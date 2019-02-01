@@ -211,11 +211,11 @@ Blockly.Msg.CONTROLS_IF_TOOLTIP_3 = 'If the first value is true, then do the fir
 Blockly.Msg.CONTROLS_IF_TOOLTIP_4 = 'If the first value is true, then do the first block of statements. Otherwise, if the second value is true, do the second block of statements. If none of the values are true, do the last block of statements.';
 /// block text - See [https://github.com/google/blockly/wiki/IfElse https://github.com/google/blockly/wiki/IfElse].
 /// It is recommended, but not essential, that this have text in common with the translation of 'else if'
-Blockly.Msg.CONTROLS_IF_MSG_IF = 'if/اگر ';
+Blockly.Msg.CONTROLS_IF_MSG_IF = 'if';
 /// block text - See [https://github.com/google/blockly/wiki/IfElse https://github.com/google/blockly/wiki/IfElse].  The English words "otherwise if" would probably be clearer than "else if", but the latter is used because it is traditional and shorter.
-Blockly.Msg.CONTROLS_IF_MSG_ELSEIF = 'else if /  ورنہ اگر ';
+Blockly.Msg.CONTROLS_IF_MSG_ELSEIF = 'else if';
 /// block text - See [https://github.com/google/blockly/wiki/IfElse https://github.com/google/blockly/wiki/IfElse].  The English word "otherwise" would probably be superior to "else", but the latter is used because it is traditional and shorter.
-Blockly.Msg.CONTROLS_IF_MSG_ELSE = 'else / ورنہ ';
+Blockly.Msg.CONTROLS_IF_MSG_ELSE = 'else';
 Blockly.Msg.CONTROLS_IF_MSG_THEN = Blockly.Msg.CONTROLS_REPEAT_INPUT_DO;
 Blockly.Msg.CONTROLS_IF_IF_TITLE_IF = Blockly.Msg.CONTROLS_IF_MSG_IF;
 /// tooltip - Describes [https://github.com/google/blockly/wiki/IfElse#block-modification if block modification].

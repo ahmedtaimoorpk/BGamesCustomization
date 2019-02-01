@@ -29,7 +29,7 @@ goog.require('Blockly.Arduino');
 
 
 Blockly.Arduino.inout_led = function () {
-    var dropdown_pin = this.getFieldValue('PIN');
+    var dropdown_pin = '3';
     var dropdown_stat = this.getFieldValue('STAT');
     if (dropdown_stat === 'ON') {
         dropdown_stat = 'HIGH'
@@ -77,8 +77,30 @@ Blockly.Arduino.inout_line_sensor = function () {
     return [code, Blockly.Arduino.ORDER_ASSIGNMENT];
 };
 
+Blockly.Arduino.inout_moisture_sensor = function () {
+    // var dropdown_pin = this.getFieldValue('PIN');
+    var dropdown_pin = 'A0';
+    var dropdown_stat = this.getFieldValue('STAT');
+    if (dropdown_stat === 'DRY') {
+        dropdown_stat = 'HIGH'
+    } else {
+        dropdown_stat = 'LOW'
+    }
+    var code = "";
+
+
+    Blockly.Arduino.definitions_['define_moisture_sensor'] = "bool SenseMoisture(int pin,int status)\n" +
+        "{\n" +
+        "  if (analogRead(pin)==status){return true;}\n" +
+        "  else {return false;}\n" +
+        "}\n\n";
+
+    code = "SenseMoisture(" + dropdown_pin + ", " + dropdown_stat + ")";
+    return [code, Blockly.Arduino.ORDER_ASSIGNMENT];
+};
+
 Blockly.Arduino.inout_fire_sensor = function () {
-    var dropdown_pin = this.getFieldValue('PIN');
+    var dropdown_pin = '11';
     var dropdown_stat = 'LOW';
     var code = "";
 
@@ -92,7 +114,9 @@ Blockly.Arduino.inout_fire_sensor = function () {
 };
 
 
-//Ultrasonic
+/** Ultrasonic
+ *
+ */
 
 Blockly.Arduino.ultrasonic_read_distance = function () {
     var trigger_pin = this.getFieldValue('trigger');
@@ -124,8 +148,8 @@ Blockly.Arduino.ultrasonic_read_distance = function () {
 //Ultrasonic
 
 Blockly.Arduino.ultrasonic_read_distance_robotwala = function () {
-    var trigger_pin = 2;
-    var echo_pin = 3;
+    var trigger_pin = 3;
+    var echo_pin = 2;
 
     Blockly.Arduino.setups_["setup_ultrasonic"] = "pinMode(" + trigger_pin + ", OUTPUT);\n" +
         "pinMode(" + echo_pin + ", INPUT);\n";

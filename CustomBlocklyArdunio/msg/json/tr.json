@@ -318,5 +318,67 @@
 	"PROCEDURES_HIGHLIGHT_DEF": "Fonksiyon tanımı vurgulamak",
 	"PROCEDURES_CREATE_DO": "'%1' oluştur",
 	"PROCEDURES_IFRETURN_TOOLTIP": "Eğer değer doğruysa, ikinci değere geri dön.",
-	"PROCEDURES_IFRETURN_WARNING": "Uyarı: Bu blok yalnızca bir fonksiyon tanımı içinde kullanılır."
+	"PROCEDURES_IFRETURN_WARNING": "Uyarı: Bu blok yalnızca bir fonksiyon tanımı içinde kullanılır.",
+
+	"CONTROL_DELAY": "Gecikme (saniye)",
+	"MATH_Map": "Harita",
+	"MATH_MapValueTo": "değeri [0-",
+	"DigitalWrite_PIN_no": "DijitalYazma PIN #",
+	"DigitalRead_PIN_no": "DijitalOkuma PIN Numarası #",
+	"AnalogWrite_PIN_no": "AnalogYazma PIN #",
+	"VALUE": "değer",
+	"inout_analog_write_Tooltip": "Analog bir değeri 0 ile 255 arasında belirli bir Bağlantı Noktasına yaz",
+
+	"inout_analog_read_AnalogRead_pin": "AnalogOkuma PIN Numarası",
+
+
+
+	"inout_analog_read_Tooltip": "0 ile 1024 arasında dönüş değeri",
+	"inout_tone_FIELD": "Frekans Sesi Çal",
+	"inout_tone_Tooltip": "Pin üzerinde ses tonları üret",
+	"inout_notone_FIELD": "Ton yok",
+	"inout_notone_Tooltip": "Pin üzerinde bir ton üretmeyi durdur",
+	"servo_move_FIELD_DEGREE": "Derece (0 ~ 180)",
+	"servo_move_Tooltip": "0 ~ 180 derece arasında hareket",
+	"servo_read_degrees_FIELD_DEGREE": "Dereceleri Oku",
+	"servo_read_degrees_Tooltip": "Bu dereceyi son servo hareketiyle geri getirin.",
+	"serial_print_FIELD": "Seri Baskı",
+	"serial_print_Tooltip": "Verileri konsol / seri bağlantı noktasına insan tarafından okunabilir ASCII metni olarak yazdırır.",
+	"inout_digital_write_Tooltip": "Dijital bir değeri belirli bir Bağlantı Noktasına yaz",
+	"inout_buildin_led_Tooltip": "yerleşik LED'i yakıp söndürme",
+	"inout_buildin_led_Field": "Dahili LED Stat",
+	"base_map_Tooltip": "[0-1024] ile diğer arasındaki bir numarayı tekrar eşler.",
+	"base_delay_Tooltip": "Gecikmeli özel zaman",
+
+	"inout_led_Tooltip": "Dijital bir değeri belirli bir Bağlantı Noktasına yaz",
+	"inout_line_sensor_Field_lineSensor": "Satır Sensörü",
+	"Sense": "duyu",
+	"inout_fire_sensor_Field": "Alev sensörü",
+	"inout_moisture_sensor_Field": "Nem Sensörü -",
+	"ultrasonic_read_distance_Field1": "Ultrasonik: ",
+	"ultrasonic_read_distance_Field2": "tetik #",
+	"ultrasonic_read_distance_Field3": "Eko#",
+	"ultrasonic_read_distance_Field4": "Okuma mesafesi",
+	"ultrasonic_read_distance_Tooltip": "son servo hareketiyle bu dereceyi geri getir.",
+
+	"ultrasonic_read_distance_robotwala_Field": "Ultrasonik mesafe:",
+	"servo_move_robotwala_Field1": "Servo",
+	"servo_move_robotwala_Field2": "TOPLU İĞNE#",
+	"servo_move_robotwala_Field3": "adımlar",
+	"servo_move_robotwala_Field4": "Gecikme (Milisaniye)",
+	"servo_move_robotwala_Field5": "Derece (0 ~ 180)",
+	"servo_move_robotwala_Tooltip": "0 ~ 180 derece arasında hareket",
+
+	"motor_turn_robotwala_Field1": "Robotu Çevir",
+	"motor_turn_robotwala_Field2": "Dönüş motoru",
+	"motor_turn_robotwala_Tooltip": "İki fırçalanmış DC motor sürün",
+
+	"grove_motor_robotwala_Field1": "Motor",
+	"grove_motor_robotwala_Field2": "Hızlı motor A",
+	"grove_motor_robotwala_Field3": "Hızlı motor B",
+	"grove_motor_robotwala_Tooltip": "İki fırçalanmış DC motor sürün",
+
+	"Category_Logic": "Mantık",
+	"controls_while_repeat": "Tekrar et",
+	"controls_while_repeat_do": "yap"
 }
