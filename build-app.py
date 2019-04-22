@@ -170,22 +170,43 @@ def write_compressed(name, lang):
     '--generate_exports',
     '--compilation_level', 'ADVANCED_OPTIMIZATIONS',
     '--dependency_mode=STRICT',
+    # '--output_manifest',
+    # 'manifest.MF',
     '--externs', 'externs/gviz-externs.js',
     '--externs', 'externs/interpreter-externs.js',
+
+    # gases Activity extern
+    # '--externs', 'externs/phaser/gases-externs.js',
+    # messy Activity extern
+    # '--externs', 'externs/phaser/messyActivity-extern.js',
+
     '--externs', 'externs/prettify-externs.js',
     '--externs', 'externs/soundJS-externs.js',
     '--externs', 'externs/storage-externs.js',
     '--externs', 'appengine/third-party/blockly/externs/svg-externs.js',
+    # '--externs', 'appengine/js/lib-gases-game.js',
     '--language_out', 'ECMASCRIPT5_STRICT',
     '--entry_point=%s' % name.replace('/', '.').title(),
     "--js='appengine/third-party/**.js'",
+    # "--js='!appengine/third-party/phaser/phaser.js'",
+    # '--externs', 'appengine/third-party/phaser/phaser.js',
     "--js='!appengine/third-party/blockly/*.js'",
     "--js='!appengine/third-party/blockly/tests/**.js'",
     "--js='!appengine/third-party/blockly/externs/**.js'",
     "--js='!appengine/third-party/blockly/demos/**.js'",
     "--js='appengine/generated/%s/*.js'" % lang,
+
+
+    # "--js='!appengine/js/lib-gases-game.js'",
+    # "--js='!appengine/js/lib-messyActivity-game.js'",
+
+
     "--js='appengine/js/*.js'",
+
     '--warning_level', 'QUIET',
+    # "--formatting='pretty_print'",
+    # "--jscomp_off='checkVars'",
+
   ]
   directory = name
   while directory:

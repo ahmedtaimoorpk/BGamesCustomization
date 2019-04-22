@@ -32,6 +32,7 @@ goog.require('Movie.Answers');
 goog.require('Movie.Blocks');
 goog.require('Movie.soy');
 goog.require('Scrubber');
+goog.require('Constants');
 
 
 BlocklyGames.NAME = 'movie';
@@ -353,6 +354,7 @@ Movie.drawFrame_ = function(interpreter) {
  *     If not defined, draws the current frame.
  */
 Movie.display = function(opt_frameNumber) {
+  debugger;
   if (typeof opt_frameNumber == 'number') {
     Movie.frameNumber = opt_frameNumber;
   }
@@ -542,7 +544,6 @@ Movie.checkFrameAnswer = function() {
  * If so, move on to next level.
  */
 Movie.checkAnswers = function() {
-  debugger;
   if (BlocklyGames.LEVEL > 1 && Movie.frameNumber != Movie.FRAMES) {
     // Only check answers at the end of the run.
     return;
@@ -570,6 +571,7 @@ Movie.submitToGallery = function() {
     return;
   }
   // Draw and copy the user layer.
+  debugger;
   var interpreter = new Interpreter(code, Movie.initInterpreter);
   var frameNumber = Movie.frameNumber;
   try {

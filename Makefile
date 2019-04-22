@@ -2,12 +2,12 @@
 # Definitions
 ##############################
 
-USER_APPS = {index,puzzle,maze,bird,turtle,movie,music,pond/docs,pond/tutor,pond/duck,gallery}
-MY_APPS = index maze pond/docs pond/tutor
-ALL_JSON = {./,index,puzzle,maze,bird,turtle,movie,music,pond/docs,pond,pond/tutor,pond/duck,gallery}
-MY_JSON = ./ index puzzle maze bird turtle movie music pond/docs pond pond/tutor pond/duck gallery
+USER_APPS = {index,puzzle,maze,bird,turtle,movie,music,pond/docs,pond/tutor,pond/duck,gallery,gases}
+MY_APPS = gases
+ALL_JSON = {./,index,puzzle,maze,bird,turtle,movie,music,pond/docs,pond,pond/tutor,pond/duck,gallery,gases}
+MY_JSON = ./ index puzzle maze bird turtle movie music pond/docs pond pond/tutor pond/duck gallery gases
 
-ALL_TEMPLATES = appengine/template.soy,appengine/index/template.soy,appengine/puzzle/template.soy,appengine/maze/template.soy,appengine/bird/template.soy,appengine/turtle/template.soy,appengine/movie/template.soy,appengine/music/template.soy,appengine/pond/docs/template.soy,appengine/pond/template.soy,appengine/pond/tutor/template.soy,appengine/pond/duck/template.soy,appengine/gallery/template.soy
+ALL_TEMPLATES = appengine/template.soy,appengine/index/template.soy,appengine/puzzle/template.soy,appengine/maze/template.soy,appengine/bird/template.soy,appengine/turtle/template.soy,appengine/movie/template.soy,appengine/music/template.soy,appengine/pond/docs/template.soy,appengine/pond/template.soy,appengine/pond/tutor/template.soy,appengine/pond/duck/template.soy,appengine/gallery/template.soy,appengine/gases/template.soy
 
 APP_ENGINE_THIRD_PARTY = appengine/third-party
 SOY_COMPILER = java -jar third-party/SoyToJsSrcCompiler.jar --shouldProvideRequireSoyNamespaces --isUsingIjData
@@ -43,6 +43,14 @@ maze-tr: common-tr
 bird-en: common-en
 	$(SOY_COMPILER) --outputPathFormat appengine/bird/generated/en/soy.js --srcs appengine/bird/template.soy
 	python build-app.py bird en
+
+gases-en: common-en
+	$(SOY_COMPILER) --outputPathFormat appengine/gases/generated/en/soy.js --srcs appengine/gases/template.soy
+	python build-app.py gases en
+
+messy-en: common-en
+	$(SOY_COMPILER) --outputPathFormat appengine/messy/generated/en/soy.js --srcs appengine/messy/template.soy
+	python build-app.py messy en
 
 turtle-en: common-en
 	$(SOY_COMPILER) --outputPathFormat appengine/turtle/generated/en/soy.js --srcs appengine/turtle/template.soy
@@ -95,14 +103,16 @@ languages:
 	@for app in $(MY_APPS); do \
 	  python build-app.py $$app en; \
 	done
-	@for app in $(MY_APPS); do \
-	  python build-app.py $$app tr; \
-	done
+
 
 languages-build:
 	@for app in $(MY_JSON); do \
 	  mkdir -p appengine/$$app/generated; \
 	  i18n/json_to_js.py --path_to_jar third-party --output_dir appengine/$$app/generated --template appengine/$$app/template.soy --key_file json/keys.json json/*.json; \
+	done
+
+	@for app in $(MY_APPS); do \
+	  python build-app.py $$app tr; \
 	done
 
 test:

@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Neil Fraser <fraser@google.com>",
-		"lastupdated": "2019-01-05 02:34:56.317270",
+		"lastupdated": "2019-03-21 16:23:50.220710",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -272,6 +272,36 @@
 	"Pond.rookName": "Rook",
 	"Pond.sniperName": "Sniper",
 	"Gallery": "Gallery",
-
-
+	"Gases.moveForward": "move forward",
+	"Gases.turnLeft": "turn left",
+	"Gases.turnRight": "turn right",
+	"Gases.doCode": "do",
+	"Gases.elseCode": "else",
+	"Gases.helpIfElse": "If-else blocks will do one thing or the other.",
+	"Gases.pathAhead": "if path ahead",
+	"Gases.pathLeft": "if path to the left",
+	"Gases.pathRight": "if path to the right",
+	"Gases.repeatUntil": "repeat until",
+	"Gases.moveForwardTooltip": "Moves the player forward one space.",
+	"Gases.turnTooltip": "Turns the player left or right by 90 degrees.",
+	"Gases.ifTooltip": "If there is a path in the specified direction, then do some actions.",
+	"Gases.ifelseTooltip": "If there is a path in the specified direction, then do the first block of actions. Otherwise, do the second block of actions.",
+	"Gases.whileTooltip": "Repeat the enclosed actions until finish point is reached.",
+	"Gases.capacity0": "You have %0 blocks left.",
+	"Gases.capacity1": "You have %1 block left.",
+	"Gases.capacity2": "You have %2 blocks left.",
+	"Gases.title": "Properties of Gases",
+	"Gases.runTooltip": "Makes the player do what the blocks say.",
+	"Gases.resetTooltip": "Put the player back at the start of the gases.",
+	"Gases.helpStack": "Stack a couple of 'move forward' blocks together to help me reach the goal.",
+	"Gases.helpOneTopBlock": "On this level, you need to stack together all of the blocks in the white workspace.",
+	"Gases.helpRun": "Run your program to see what happens.",
+	"Gases.helpReset": "Your program didn't solve the gases. Press 'Reset' and try again.",
+	"Gases.helpRepeat": "Reach the end of this path using only two blocks. Use 'repeat' to run a block more than once.",
+	"Gases.helpCapacity": "You have used up all the blocks for this level. To create a new block, you first need to delete an existing block.",
+	"Gases.helpRepeatMany": "You can fit more than one block inside a 'repeat' block.",
+	"Gases.helpSkins": "Choose your favourite player from this menu.",
+	"Gases.helpIf": "An 'if' block will do something only if the condition is true. Try turning left if there is a path to the left.",
+	"Gases.helpMenu": "Click on %1 in the 'if' block to change its condition.",
+	"Gases.helpWallFollow": "Can you fix this Machine? Collect all the Missing Parts &amp; Try assembling the Machine. Advanced programmers only!"
 }

@@ -1,0 +1,2195 @@
+{
+	"textures": [
+		{
+			"image": "SS.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 3908,
+				"h": 3908
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "anims/apple_seeds/6",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 111,
+						"w": 107,
+						"h": 65
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 107,
+						"h": 65
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/Sunflower_seeds/6",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 110,
+						"w": 105,
+						"h": 66
+					},
+					"frame": {
+						"x": 107,
+						"y": 0,
+						"w": 105,
+						"h": 66
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/strawberry_seeds/6",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 90,
+						"w": 113,
+						"h": 75
+					},
+					"frame": {
+						"x": 212,
+						"y": 0,
+						"w": 113,
+						"h": 75
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "UI/btnHint",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 54,
+						"w": 250,
+						"h": 91
+					},
+					"frame": {
+						"x": 325,
+						"y": 0,
+						"w": 250,
+						"h": 91
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "UI/btnNextLevel",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 54,
+						"w": 250,
+						"h": 92
+					},
+					"frame": {
+						"x": 575,
+						"y": 0,
+						"w": 250,
+						"h": 92
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "UI/btnRestart",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 54,
+						"w": 250,
+						"h": 92
+					},
+					"frame": {
+						"x": 825,
+						"y": 0,
+						"w": 250,
+						"h": 92
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "UI/btnStart",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 54,
+						"w": 250,
+						"h": 92
+					},
+					"frame": {
+						"x": 1075,
+						"y": 0,
+						"w": 250,
+						"h": 92
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "UI/btnHelp",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 54,
+						"w": 250,
+						"h": 92
+					},
+					"frame": {
+						"x": 1325,
+						"y": 0,
+						"w": 250,
+						"h": 92
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/fertilizer1.4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 136,
+						"h": 136
+					},
+					"spriteSourceSize": {
+						"x": 18,
+						"y": 21,
+						"w": 100,
+						"h": 93
+					},
+					"frame": {
+						"x": 1575,
+						"y": 0,
+						"w": 100,
+						"h": 93
+					},
+					"anchor": {
+						"x": 0.514706,
+						"y": 0.492647
+					}
+				},
+				{
+					"filename": "anims/apple1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 67,
+						"h": 95
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 67,
+						"h": 95
+					},
+					"frame": {
+						"x": 1675,
+						"y": 0,
+						"w": 67,
+						"h": 95
+					},
+					"anchor": {
+						"x": 0.537313,
+						"y": 0.6
+					}
+				},
+				{
+					"filename": "anims/fertilizer1.2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 132,
+						"h": 96
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 132,
+						"h": 96
+					},
+					"frame": {
+						"x": 1742,
+						"y": 0,
+						"w": 132,
+						"h": 96
+					},
+					"anchor": {
+						"x": 0.628788,
+						"y": 0.510417
+					}
+				},
+				{
+					"filename": "anims/fertilizer1.1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 143,
+						"h": 143
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 22,
+						"w": 104,
+						"h": 99
+					},
+					"frame": {
+						"x": 1874,
+						"y": 0,
+						"w": 104,
+						"h": 99
+					},
+					"anchor": {
+						"x": 0.51049,
+						"y": 0.51049
+					}
+				},
+				{
+					"filename": "anims/Sunflower_seeds/4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 37,
+						"w": 105,
+						"h": 124
+					},
+					"frame": {
+						"x": 1978,
+						"y": 0,
+						"w": 105,
+						"h": 124
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/Sunflower_seeds/3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 28,
+						"w": 105,
+						"h": 124
+					},
+					"frame": {
+						"x": 2083,
+						"y": 0,
+						"w": 105,
+						"h": 124
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/Sunflower_seeds/2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 18,
+						"w": 105,
+						"h": 127
+					},
+					"frame": {
+						"x": 2188,
+						"y": 0,
+						"w": 105,
+						"h": 127
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/8",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 2293,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/9",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 2421,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/11",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 2549,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/12",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 2677,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/10",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 2805,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/6",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 2933,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/4",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 3061,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/7",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 3189,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 3317,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/5",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 3445,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 3573,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 3701,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "clock/13",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 128,
+						"h": 128
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 128,
+						"h": 128
+					},
+					"frame": {
+						"x": 0,
+						"y": 128,
+						"w": 128,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/Sunflower_seeds/5",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 48,
+						"w": 105,
+						"h": 128
+					},
+					"frame": {
+						"x": 128,
+						"y": 128,
+						"w": 105,
+						"h": 128
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/apple_seeds/4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 25,
+						"w": 107,
+						"h": 129
+					},
+					"frame": {
+						"x": 233,
+						"y": 128,
+						"w": 107,
+						"h": 129
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/apple_seeds/2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 7,
+						"y": 13,
+						"w": 105,
+						"h": 129
+					},
+					"frame": {
+						"x": 340,
+						"y": 128,
+						"w": 105,
+						"h": 129
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/apple_seeds/5",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 38,
+						"w": 107,
+						"h": 129
+					},
+					"frame": {
+						"x": 445,
+						"y": 128,
+						"w": 107,
+						"h": 129
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/Sunflower_seeds/1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 9,
+						"w": 105,
+						"h": 129
+					},
+					"frame": {
+						"x": 552,
+						"y": 128,
+						"w": 105,
+						"h": 129
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/apple_seeds/3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 20,
+						"w": 107,
+						"h": 129
+					},
+					"frame": {
+						"x": 657,
+						"y": 128,
+						"w": 107,
+						"h": 129
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/apple_seeds/1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 8,
+						"w": 107,
+						"h": 129
+					},
+					"frame": {
+						"x": 764,
+						"y": 128,
+						"w": 107,
+						"h": 129
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/strawberry_seeds/2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 9,
+						"w": 109,
+						"h": 134
+					},
+					"frame": {
+						"x": 871,
+						"y": 128,
+						"w": 109,
+						"h": 134
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/strawberry_seeds/3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 110,
+						"h": 134
+					},
+					"frame": {
+						"x": 980,
+						"y": 128,
+						"w": 110,
+						"h": 134
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/strawberry_seeds/1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 4,
+						"w": 109,
+						"h": 134
+					},
+					"frame": {
+						"x": 1090,
+						"y": 128,
+						"w": 109,
+						"h": 134
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/strawberry_seeds/4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 25,
+						"w": 110,
+						"h": 135
+					},
+					"frame": {
+						"x": 1199,
+						"y": 128,
+						"w": 110,
+						"h": 135
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/strawberry_seeds/5",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 120,
+						"h": 176
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 29,
+						"w": 110,
+						"h": 136
+					},
+					"frame": {
+						"x": 1309,
+						"y": 128,
+						"w": 110,
+						"h": 136
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/apple2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 63,
+						"h": 152
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 8,
+						"w": 63,
+						"h": 144
+					},
+					"frame": {
+						"x": 1419,
+						"y": 128,
+						"w": 63,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.555556,
+						"y": 0.605263
+					}
+				},
+				{
+					"filename": "anims/fertilizer1.3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 119,
+						"h": 145
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 119,
+						"h": 145
+					},
+					"frame": {
+						"x": 1482,
+						"y": 128,
+						"w": 119,
+						"h": 145
+					},
+					"anchor": {
+						"x": 0.605042,
+						"y": 0.303448
+					}
+				},
+				{
+					"filename": "anims/tool1.2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 368,
+						"h": 320
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 72,
+						"w": 348,
+						"h": 206
+					},
+					"frame": {
+						"x": 1601,
+						"y": 128,
+						"w": 348,
+						"h": 206
+					},
+					"anchor": {
+						"x": 0.486413,
+						"y": 0.453125
+					}
+				},
+				{
+					"filename": "anims/sparkle1.3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 400,
+						"h": 280
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 4,
+						"w": 377,
+						"h": 272
+					},
+					"frame": {
+						"x": 1949,
+						"y": 128,
+						"w": 377,
+						"h": 272
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "sunflower1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 381,
+						"h": 276
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 381,
+						"h": 276
+					},
+					"frame": {
+						"x": 2326,
+						"y": 128,
+						"w": 381,
+						"h": 276
+					},
+					"anchor": {
+						"x": 0.498688,
+						"y": 0.547101
+					}
+				},
+				{
+					"filename": "smoke/smoke4.1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 256,
+						"h": 279
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 244,
+						"h": 279
+					},
+					"frame": {
+						"x": 2707,
+						"y": 128,
+						"w": 244,
+						"h": 279
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "groundPatch",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 400,
+						"h": 280
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 400,
+						"h": 280
+					},
+					"frame": {
+						"x": 2951,
+						"y": 128,
+						"w": 400,
+						"h": 280
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "smoke/smoke3.1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 256,
+						"h": 289
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 6,
+						"w": 252,
+						"h": 283
+					},
+					"frame": {
+						"x": 3351,
+						"y": 128,
+						"w": 252,
+						"h": 283
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "smoke/smoke2.1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 256,
+						"h": 289
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 249,
+						"h": 289
+					},
+					"frame": {
+						"x": 3603,
+						"y": 128,
+						"w": 249,
+						"h": 289
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/apple3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 385,
+						"h": 300
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 385,
+						"h": 300
+					},
+					"frame": {
+						"x": 0,
+						"y": 417,
+						"w": 385,
+						"h": 300
+					},
+					"anchor": {
+						"x": 0.52987,
+						"y": 0.88
+					}
+				},
+				{
+					"filename": "anims/tool1.1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 244,
+						"h": 323
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 244,
+						"h": 323
+					},
+					"frame": {
+						"x": 385,
+						"y": 417,
+						"w": 244,
+						"h": 323
+					},
+					"anchor": {
+						"x": 0.565574,
+						"y": 0.52322
+					}
+				},
+				{
+					"filename": "cApple",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 333,
+						"h": 327
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 329,
+						"h": 327
+					},
+					"frame": {
+						"x": 629,
+						"y": 417,
+						"w": 329,
+						"h": 327
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "cStrawberry",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 333,
+						"h": 327
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 329,
+						"h": 327
+					},
+					"frame": {
+						"x": 958,
+						"y": 417,
+						"w": 329,
+						"h": 327
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "cSunflower",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 333,
+						"h": 327
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 329,
+						"h": 327
+					},
+					"frame": {
+						"x": 1287,
+						"y": 417,
+						"w": 329,
+						"h": 327
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "gwater",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 363,
+						"h": 360
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 15,
+						"w": 329,
+						"h": 329
+					},
+					"frame": {
+						"x": 1616,
+						"y": 417,
+						"w": 329,
+						"h": 329
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "strawberrySeed",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 357,
+						"h": 342
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 10,
+						"w": 329,
+						"h": 329
+					},
+					"frame": {
+						"x": 1945,
+						"y": 417,
+						"w": 329,
+						"h": 329
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "fertilizer",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 357,
+						"h": 350
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 9,
+						"w": 329,
+						"h": 329
+					},
+					"frame": {
+						"x": 2274,
+						"y": 417,
+						"w": 329,
+						"h": 329
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "sunflowerSeed",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 357,
+						"h": 363
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 18,
+						"w": 329,
+						"h": 329
+					},
+					"frame": {
+						"x": 2603,
+						"y": 417,
+						"w": 329,
+						"h": 329
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 357,
+						"h": 360
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 18,
+						"w": 329,
+						"h": 329
+					},
+					"frame": {
+						"x": 2932,
+						"y": 417,
+						"w": 329,
+						"h": 329
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "5",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 343,
+						"h": 340
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 6,
+						"w": 329,
+						"h": 329
+					},
+					"frame": {
+						"x": 3261,
+						"y": 417,
+						"w": 329,
+						"h": 329
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 365,
+						"h": 363
+					},
+					"spriteSourceSize": {
+						"x": 19,
+						"y": 18,
+						"w": 329,
+						"h": 329
+					},
+					"frame": {
+						"x": 0,
+						"y": 746,
+						"w": 329,
+						"h": 329
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "6",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 340,
+						"h": 366
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 18,
+						"w": 329,
+						"h": 329
+					},
+					"frame": {
+						"x": 329,
+						"y": 746,
+						"w": 329,
+						"h": 329
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 354,
+						"h": 366
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 21,
+						"w": 329,
+						"h": 329
+					},
+					"frame": {
+						"x": 658,
+						"y": 746,
+						"w": 329,
+						"h": 329
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "bwater",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 354,
+						"h": 357
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 15,
+						"w": 329,
+						"h": 329
+					},
+					"frame": {
+						"x": 987,
+						"y": 746,
+						"w": 329,
+						"h": 329
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 359,
+						"h": 360
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 12,
+						"w": 329,
+						"h": 329
+					},
+					"frame": {
+						"x": 1316,
+						"y": 746,
+						"w": 329,
+						"h": 329
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/strewberry1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 579,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 8,
+						"y": 6,
+						"w": 568,
+						"h": 331
+					},
+					"frame": {
+						"x": 1645,
+						"y": 746,
+						"w": 568,
+						"h": 331
+					},
+					"anchor": {
+						"x": 0.509499,
+						"y": 0.520095
+					}
+				},
+				{
+					"filename": "smoke/smoke4.2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 304,
+						"h": 336
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 293,
+						"h": 336
+					},
+					"frame": {
+						"x": 2213,
+						"y": 746,
+						"w": 293,
+						"h": 336
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "smoke/smoke3.2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 302,
+						"h": 339
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 302,
+						"h": 339
+					},
+					"frame": {
+						"x": 2506,
+						"y": 746,
+						"w": 302,
+						"h": 339
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "smoke/smoke1.1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 242,
+						"h": 343
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 242,
+						"h": 343
+					},
+					"frame": {
+						"x": 2808,
+						"y": 746,
+						"w": 242,
+						"h": 343
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "smoke/smoke2.2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 298,
+						"h": 352
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 298,
+						"h": 352
+					},
+					"frame": {
+						"x": 3050,
+						"y": 746,
+						"w": 298,
+						"h": 352
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/gwater1.2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 424,
+						"h": 357
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 424,
+						"h": 357
+					},
+					"frame": {
+						"x": 3348,
+						"y": 746,
+						"w": 424,
+						"h": 357
+					},
+					"anchor": {
+						"x": 0.497642,
+						"y": 0.532213
+					}
+				},
+				{
+					"filename": "anims/gwater1.1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 442,
+						"h": 357
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 442,
+						"h": 357
+					},
+					"frame": {
+						"x": 0,
+						"y": 1103,
+						"w": 442,
+						"h": 357
+					},
+					"anchor": {
+						"x": 0.520362,
+						"y": 0.535014
+					}
+				},
+				{
+					"filename": "anims/bwater2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 424,
+						"h": 364
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 424,
+						"h": 359
+					},
+					"frame": {
+						"x": 442,
+						"y": 1103,
+						"w": 424,
+						"h": 359
+					},
+					"anchor": {
+						"x": 0.497642,
+						"y": 0.527473
+					}
+				},
+				{
+					"filename": "anims/bwater1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 442,
+						"h": 362
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 442,
+						"h": 362
+					},
+					"frame": {
+						"x": 866,
+						"y": 1103,
+						"w": 442,
+						"h": 362
+					},
+					"anchor": {
+						"x": 0.513575,
+						"y": 0.535912
+					}
+				},
+				{
+					"filename": "smoke/smoke1.2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 278,
+						"h": 385
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 7,
+						"w": 267,
+						"h": 378
+					},
+					"frame": {
+						"x": 1308,
+						"y": 1103,
+						"w": 267,
+						"h": 378
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "smoke/smoke2.3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 341,
+						"h": 411
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 9,
+						"w": 341,
+						"h": 402
+					},
+					"frame": {
+						"x": 1575,
+						"y": 1103,
+						"w": 341,
+						"h": 402
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "smoke/smoke3.3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 358,
+						"h": 403
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 358,
+						"h": 402
+					},
+					"frame": {
+						"x": 1916,
+						"y": 1103,
+						"w": 358,
+						"h": 402
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "smoke/smoke4.3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 358,
+						"h": 403
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 350,
+						"h": 403
+					},
+					"frame": {
+						"x": 2274,
+						"y": 1103,
+						"w": 350,
+						"h": 403
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "smoke/smoke1.3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 302,
+						"h": 411
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 291,
+						"h": 411
+					},
+					"frame": {
+						"x": 2624,
+						"y": 1103,
+						"w": 291,
+						"h": 411
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "girl",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 404,
+						"h": 457
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 10,
+						"w": 347,
+						"h": 420
+					},
+					"frame": {
+						"x": 2915,
+						"y": 1103,
+						"w": 347,
+						"h": 420
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "anims/strewberry3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 579,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 579,
+						"h": 423
+					},
+					"frame": {
+						"x": 3262,
+						"y": 1103,
+						"w": 579,
+						"h": 423
+					},
+					"anchor": {
+						"x": 0.493955,
+						"y": 0.453901
+					}
+				},
+				{
+					"filename": "anims/strewberry2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 579,
+						"h": 423
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 579,
+						"h": 423
+					},
+					"frame": {
+						"x": 0,
+						"y": 1526,
+						"w": 579,
+						"h": 423
+					},
+					"anchor": {
+						"x": 0.493955,
+						"y": 0.453901
+					}
+				},
+				{
+					"filename": "boy",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 404,
+						"h": 457
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 5,
+						"w": 351,
+						"h": 425
+					},
+					"frame": {
+						"x": 579,
+						"y": 1526,
+						"w": 351,
+						"h": 425
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "sunflower2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 401,
+						"h": 486
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 401,
+						"h": 486
+					},
+					"frame": {
+						"x": 930,
+						"y": 1526,
+						"w": 401,
+						"h": 486
+					},
+					"anchor": {
+						"x": 0.476309,
+						"y": 0.582305
+					}
+				},
+				{
+					"filename": "anims/sunflower4",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 396,
+						"h": 505
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 396,
+						"h": 505
+					},
+					"frame": {
+						"x": 1331,
+						"y": 1526,
+						"w": 396,
+						"h": 505
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.508911
+					}
+				},
+				{
+					"filename": "smoke_background",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 2084,
+						"h": 1042
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 2084,
+						"h": 1042
+					},
+					"frame": {
+						"x": 1727,
+						"y": 1526,
+						"w": 2084,
+						"h": 1042
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				},
+				{
+					"filename": "lvl1Background",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 2097,
+						"h": 1340
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 2097,
+						"h": 1340
+					},
+					"frame": {
+						"x": 0,
+						"y": 2568,
+						"w": 2097,
+						"h": 1340
+					},
+					"anchor": {
+						"x": 0.496815,
+						"y": 0.525969
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:805b4ccdcc8cd7c8d5190408d4da1aa9:05a1796ef622b201aa38336bfc8e8919:e677cdfec232806e62388ccb3d7164e2$"
+	}
+}

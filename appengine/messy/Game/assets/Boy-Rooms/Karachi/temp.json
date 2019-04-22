@@ -1,0 +1,222 @@
+{ "height":32,
+ "infinite":false,
+ "layers":[
+        {
+         "draworder":"topdown",
+         "id":2,
+         "name":"background",
+         "objects":[
+                {
+                 "gid":1,
+                 "height":602,
+                 "id":1,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":794,
+                 "x":4,
+                 "y":604
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":3,
+         "name":"pencil",
+         "objects":[
+                {
+                 "gid":2,
+                 "height":12,
+                 "id":2,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":101.5,
+                 "x":66.5,
+                 "y":95
+                }, 
+                {
+                 "gid":2,
+                 "height":20,
+                 "id":5,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":78,
+                 "x":90,
+                 "y":69
+                }, 
+                {
+                 "gid":12,
+                 "height":113,
+                 "id":6,
+                 "name":"bag",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":110,
+                 "x":368,
+                 "y":534
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":5,
+ "nextobjectid":7,
+ "orientation":"orthogonal",
+ "renderorder":"right-down",
+ "tiledversion":"1.2.2",
+ "tileheight":19,
+ "tilesets":[
+        {
+         "columns":0,
+         "firstgid":1,
+         "grid":
+            {
+             "height":1,
+             "orientation":"orthogonal",
+             "width":1
+            },
+         "margin":0,
+         "name":"TS",
+         "spacing":0,
+         "tilecount":20,
+         "tileheight":2550,
+         "tiles":[
+                {
+                 "id":0,
+                 "image":"Karachi-Boy Blank-Room-01.jpg",
+                 "imageheight":800,
+                 "imagewidth":800
+                }, 
+                {
+                 "id":1,
+                 "image":"Messy-Room Objects\/pencil.png",
+                 "imageheight":47,
+                 "imagewidth":260
+                }, 
+                {
+                 "id":2,
+                 "image":"Messy-Room Objects\/papers.png",
+                 "imageheight":195,
+                 "imagewidth":392
+                }, 
+                {
+                 "id":3,
+                 "image":"Messy-Room Objects\/pencil-glass.png",
+                 "imageheight":233,
+                 "imagewidth":615
+                }, 
+                {
+                 "id":4,
+                 "image":"Messy-Room Objects\/pillow.png",
+                 "imageheight":212,
+                 "imagewidth":299
+                }, 
+                {
+                 "id":5,
+                 "image":"Messy-Room Objects\/pillow-2.png",
+                 "imageheight":218,
+                 "imagewidth":466
+                }, 
+                {
+                 "id":6,
+                 "image":"Messy-Room Objects\/pin.png",
+                 "imageheight":65,
+                 "imagewidth":50
+                }, 
+                {
+                 "id":7,
+                 "image":"Messy-Room Objects\/pin-2.png",
+                 "imageheight":56,
+                 "imagewidth":60
+                }, 
+                {
+                 "id":8,
+                 "image":"Messy-Room Objects\/rocket.png",
+                 "imageheight":211,
+                 "imagewidth":369
+                }, 
+                {
+                 "id":9,
+                 "image":"Messy-Room Objects\/rubber.png",
+                 "imageheight":21,
+                 "imagewidth":80
+                }, 
+                {
+                 "id":10,
+                 "image":"Messy-Room Objects\/scale.png",
+                 "imageheight":27,
+                 "imagewidth":223
+                }, 
+                {
+                 "id":11,
+                 "image":"Messy-Room Objects\/school-bag.png",
+                 "imageheight":371,
+                 "imagewidth":346
+                }, 
+                {
+                 "id":12,
+                 "image":"Messy-Room Objects\/sock.png",
+                 "imageheight":155,
+                 "imagewidth":146
+                }, 
+                {
+                 "id":13,
+                 "image":"Messy-Room Objects\/sticky-note.png",
+                 "imageheight":99,
+                 "imagewidth":104
+                }, 
+                {
+                 "id":14,
+                 "image":"Messy-Room Objects\/books-2.png",
+                 "imageheight":106,
+                 "imagewidth":212
+                }, 
+                {
+                 "id":15,
+                 "image":"Messy-Room Objects\/books-3.png",
+                 "imageheight":234,
+                 "imagewidth":159
+                }, 
+                {
+                 "id":16,
+                 "image":"Messy-Room Objects\/chair.png",
+                 "imageheight":1053,
+                 "imagewidth":761
+                }, 
+                {
+                 "id":17,
+                 "image":"Messy-Room Objects\/darpe-1.png",
+                 "imageheight":757,
+                 "imagewidth":215
+                }, 
+                {
+                 "id":18,
+                 "image":"Messy-Room Objects\/darpe-2.png",
+                 "imageheight":127,
+                 "imagewidth":689
+                }, 
+                {
+                 "id":19,
+                 "image":"Messy-Room Objects\/Karachi-Boy Blank-Room-01.jpg",
+                 "imageheight":2550,
+                 "imagewidth":2550
+                }],
+         "tilewidth":2550
+        }],
+ "tilewidth":25,
+ "type":"map",
+ "version":1.2,
+ "width":32
+}
