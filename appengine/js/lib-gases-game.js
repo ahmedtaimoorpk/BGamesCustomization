@@ -269,7 +269,7 @@ GasesGame.gameInit = function (func, level) {
         },
 
         inst1: function () {
-            ins1S.play();
+            // ins1S.play();
             game.add.tween(this.img1).to({alpha: 1}, 1000, Phaser.Easing.Linear.None, true, 0, 1, true);
             game.add.tween(this.img2).to({alpha: 1}, 1000, Phaser.Easing.Linear.None, true, 0, 1, true);
             game.add.tween(this.img3).to({alpha: 1}, 1000, Phaser.Easing.Linear.None, true, 0, 1, true);

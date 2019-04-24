@@ -123,6 +123,7 @@ Gases.SKINS = [
         tool_collection: ['gases/Sounds/tool_collection.wav', 'gases/Sounds/tool_collection.ogg'],
         crashSound: ['gases/fail_pegman.mp3', 'gases/fail_pegman.ogg'],
         crashType: Gases.CRASH_STOP,
+        ins1: ['gases/Sounds/ins1S.ogg'],
         ins2: ['gases/Sounds/ins2S.ogg'],
         // ins3: ['gases/Sounds/ins3S.ogg'],
         ins4: ['gases/Sounds/ins4S.ogg'],
@@ -132,6 +133,8 @@ Gases.SKINS = [
         ins8: ['gases/Sounds/ins8S.ogg'],
         ins9: ['gases/Sounds/ins9S.ogg'],
         ins10: ['gases/Sounds/ins10S.ogg'],
+        wrong_block: ['gases/Sounds/wrong_block.ogg'],
+        lvl2Start: ['gases/Sounds/lvl2Start.ogg'],
 
     }
 ];
@@ -511,6 +514,7 @@ Gases.drawMap = function () {
  * Initialize Blockly and the gases.  Called on page load.
  */
 
+
 Gases.init = function () {
 
     var PhaserGameInitCallback = function () {
@@ -621,6 +625,7 @@ Gases.init = function () {
     BlocklyGames.workspace.getAudioManager().load(Gases.SKIN.winSound, 'win');
     BlocklyGames.workspace.getAudioManager().load(Gases.SKIN.crashSound, 'fail');
 
+    BlocklyGames.workspace.getAudioManager().load(Gases.SKIN.ins1, 'ins1');
     BlocklyGames.workspace.getAudioManager().load(Gases.SKIN.ins2, 'ins2');
     // BlocklyGames.workspace.getAudioManager().load(Gases.SKIN.ins3, 'ins3');
     BlocklyGames.workspace.getAudioManager().load(Gases.SKIN.ins4, 'ins4');
@@ -630,6 +635,8 @@ Gases.init = function () {
     BlocklyGames.workspace.getAudioManager().load(Gases.SKIN.ins8, 'ins8');
     BlocklyGames.workspace.getAudioManager().load(Gases.SKIN.ins9, 'ins9');
     BlocklyGames.workspace.getAudioManager().load(Gases.SKIN.ins10, 'ins10');
+    BlocklyGames.workspace.getAudioManager().load(Gases.SKIN.wrong_block, 'wrong_block');
+    BlocklyGames.workspace.getAudioManager().load(Gases.SKIN.lvl2Start, 'lvl2Start');
 
     BlocklyGames.workspace.getAudioManager().load(Gases.SKIN.tool_collection, 'tool_collection');
 
@@ -672,9 +679,7 @@ Gases.init = function () {
     }
 
     Gases.reset(true);
-    BlocklyGames.workspace.addChangeListener(function () {
-        Gases.updateCapacity();
-    });
+
 
     document.body.addEventListener('mousemove', Gases.updatePegSpin_, true);
 
@@ -735,9 +740,29 @@ Gases.init = function () {
         thissChild.style.backgroundColor = Constants.Color["levelLinkColor"];
     }
 
-    if (BlocklyGames.LEVEL == 1) {
-        setTimeout(BlocklyDialogs.gasesGameStart, 1000);
-    }
+    //Start button at the start of the activity
+    var btn = document.getElementById('startButton');
+    var bg = document.getElementById('startButtonBg');
+    btn.style.display = 'block';
+    bg.style.display = 'block';
+    btn.onclick = function (event) {
+        btn.style.display = 'None';
+        bg.style.display = 'None';
+        if (BlocklyGames.LEVEL === 1) {
+            setTimeout(BlocklyDialogs.gasesGameStart, 1000);
+            setTimeout(function () {
+                BlocklyGames.workspace.getAudioManager().play('ins1', 1);
+            }, 500);
+        } else if (BlocklyGames.LEVEL === 2) {
+            setTimeout(function () {
+                BlocklyGames.workspace.getAudioManager().play('lvl2Start', 1);
+            }, 200);
+        }
+    };
+
+    BlocklyGames.workspace.addChangeListener(Gases.updateCapacity);
+    BlocklyGames.workspace.addChangeListener(Gases.updateVoiceOvers);
+
 };
 
 /**
@@ -938,53 +963,6 @@ Gases.saveToStorage = function () {
 };
 
 /**
- * Display the Pegman skin-change menu.
- * @param {!Event} e Mouse, touch, or resize event.
- */
-// Gases.showPegmanMenu = function (e) {
-//     var menu = document.getElementById('pegmanMenu');
-//     if (menu.style.display == 'block') {
-//         // Menu is already open.  Close it.
-//         Gases.hidePegmanMenu(e);
-//         return;
-//     }
-//     // Prevent double-clicks or double-taps.
-//     if (BlocklyInterface.eventSpam(e)) {
-//         return;
-//     }
-//     var button = document.getElementById('pegmanButton');
-//     button.classList.add('buttonHover');
-//     menu.style.top = (button.offsetTop + button.offsetHeight) + 'px';
-//     menu.style.left = button.offsetLeft + 'px';
-//     menu.style.display = 'block';
-//     Gases.pegmanMenuMouse_ =
-//         Blockly.bindEvent_(document.body, 'mousedown', null, Gases.hidePegmanMenu);
-//     // Close the skin-changing hint if open.
-//     var hint = document.getElementById('dialogHelpSkins');
-//     if (hint && hint.className != 'dialogHiddenContent') {
-//         BlocklyDialogs.hideDialog(false);
-//     }
-//     Gases.showPegmanMenu.activatedOnce = true;
-// };
-
-/**
- * Hide the Pegman skin-change menu.
- * @param {!Event} e Mouse, touch, or resize event.
- */
-// Gases.hidePegmanMenu = function (e) {
-//     // Prevent double-clicks or double-taps.
-//     if (BlocklyInterface.eventSpam(e)) {
-//         return;
-//     }
-//     document.getElementById('pegmanMenu').style.display = 'none';
-//     document.getElementById('pegmanButton').classList.remove('buttonHover');
-//     if (Gases.pegmanMenuMouse_) {
-//         Blockly.unbindEvent_(Gases.pegmanMenuMouse_);
-//         delete Gases.pegmanMenuMouse_;
-//     }
-// };
-
-/**
  * Reset the gases to the start position and kill any pending animation tasks.
  * @param {boolean} first True if an opening animation is to be played.
  */
@@ -1141,7 +1119,8 @@ Gases.runButtonClick = function (e) {
  * indicating how many more blocks are permitted.  The capacity
  * is retrieved from BlocklyGames.workspace.remainingCapacity().
  */
-Gases.updateCapacity = function () {
+
+Gases.updateCapacity = function (event) {
     var cap = BlocklyGames.workspace.remainingCapacity();
     var p = document.getElementById('capacity');
     if (cap == Infinity) {
@@ -1168,34 +1147,93 @@ Gases.updateCapacity = function () {
             }
         }
     }
+};
 
-    /*
-    * IMPLEMENTATION OF ALL VO'S
-    * */
-    if (BlocklyGames.LEVEL == 1) {
-        if (BlocklyGames.workspace.getAllBlocks().length === 2 && !VOins5) {
-            VOins5 = true;
-            setTimeout(function () {
-                BlocklyGames.workspace.getAudioManager().play('ins5', 1);
-            }, 1000);
-        } else if (BlocklyGames.workspace.getAllBlocks().length === 3 && !VOins6) {
-            VOins6 = true;
-            setTimeout(function () {
-                BlocklyGames.workspace.getAudioManager().play('ins6', 1);
-            }, 1000);
-        } else if (BlocklyGames.workspace.getAllBlocks().length === 4 && !VOins7) {
-            VOins7 = true;
-            setTimeout(function () {
-                BlocklyGames.workspace.getAudioManager().play('ins5', 1);
-            }, 1000);
-        } else if (BlocklyGames.workspace.getAllBlocks().length === 5 && !VOins8) {
-            VOins8 = true;
-            setTimeout(function () {
-                BlocklyGames.workspace.getAudioManager().play('ins7', 1);
-            }, 1000);
+/*
+* Updates all the voice overs at each workspace change.
+* */
+Gases.updateVoiceOvers = function (event) {
+
+    if (event.type === Blockly.Events.BLOCK_MOVE && event.newParentId !== undefined && BlocklyGames.LEVEL === 1) {
+        // console.log(event.newCoordinate);
+        console.log(event.newParentId);
+
+        var currentLength = BlocklyGames.workspace.getAllBlocks().length;
+
+        if (currentLength >= 1 && BlocklyGames.workspace.getAllBlocks()[0].type === 'gases_moveForward') {
+            if (currentLength >= 2 && BlocklyGames.workspace.getAllBlocks()[1].type === 'gases_turn' && BlocklyGames.workspace.getAllBlocks()[1].getDirection() === 'left') {
+                if (currentLength >= 3 && BlocklyGames.workspace.getAllBlocks()[2].type === 'gases_moveForward') {
+                    if (currentLength >= 4 && BlocklyGames.workspace.getAllBlocks()[3].type === 'gases_turn' && BlocklyGames.workspace.getAllBlocks()[3].getDirection() === 'right') {
+                        if (currentLength >= 5 && BlocklyGames.workspace.getAllBlocks()[4].type === 'gases_moveForward') {
+                            setTimeout(function () {
+                                BlocklyGames.workspace.getAudioManager().play('ins7', 1);
+                            }, 200);
+                        } else {
+                            if (currentLength === 5) {
+                                setTimeout(function () {
+                                    BlocklyGames.workspace.getAudioManager().play('ins9', 1);
+                                }, 500);
+
+                                setTimeout(function () {
+                                    BlocklyGames.workspace.undo();
+                                    BlocklyGames.workspace.getAudioManager().play('ins5', 1);
+                                }, 3500);
+                            } else {
+                                setTimeout(function () {
+                                    BlocklyGames.workspace.getAudioManager().play('ins5', 1);
+                                }, 200);
+                            }
+                        }
+                    } else {
+                        if (currentLength === 4) {
+                            setTimeout(function () {
+                                BlocklyGames.workspace.getAudioManager().play('ins9', 1);
+                            }, 500);
+
+                            setTimeout(function () {
+                                BlocklyGames.workspace.undo();
+                                BlocklyGames.workspace.getAudioManager().play('ins6', 1);
+                            }, 3500);
+                        } else {
+                            setTimeout(function () {
+                                BlocklyGames.workspace.getAudioManager().play('ins6', 1);
+                            }, 200);
+                        }
+                    }
+                } else {
+                    if (currentLength === 3) {
+                        setTimeout(function () {
+                            BlocklyGames.workspace.getAudioManager().play('ins9', 1);
+                        }, 500);
+
+                        setTimeout(function () {
+                            BlocklyGames.workspace.undo();
+                            BlocklyGames.workspace.getAudioManager().play('ins5', 1);
+                        }, 3500);
+                    } else {
+                        setTimeout(function () {
+                            BlocklyGames.workspace.getAudioManager().play('ins5', 1);
+                        }, 200);
+                    }
+                }
+            } else {
+                if (currentLength === 2) {
+                    setTimeout(function () {
+                        BlocklyGames.workspace.getAudioManager().play('ins9', 1);
+                    }, 500);
+
+                    setTimeout(function () {
+                        BlocklyGames.workspace.undo();
+                        BlocklyGames.workspace.getAudioManager().play('ins4', 1);
+                    }, 3500);
+                } else {
+                    setTimeout(function () {
+                        BlocklyGames.workspace.getAudioManager().play('ins4', 1);
+                    }, 200);
+                }
+            }
         }
     }
-
 };
 
 /**

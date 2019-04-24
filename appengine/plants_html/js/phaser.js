@@ -746,7 +746,6 @@ class plantsLvl1 extends Phaser.Scene {
                                 });
                             }
                         });
-                        ;
 
                     } else if (selectedTool.name === "water") {
                         ground3.water = true;

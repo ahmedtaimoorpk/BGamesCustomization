@@ -175,9 +175,9 @@ def write_compressed(name, lang):
     '--externs', 'externs/gviz-externs.js',
     '--externs', 'externs/interpreter-externs.js',
 
-    # gases Activity extern
-    # '--externs', 'externs/phaser/gases-externs.js',
-    # messy Activity extern
+    # UNCOMMENT THE LINE BELOW TO COMPILE GASES ACTIVITY (gases Activity extern)
+    '--externs', 'externs/phaser/gases-externs.js',
+    # UNCOMMENT THE LINE BELOW TO COMPILE MESSY ACTIVITY (messy Activity extern)
     # '--externs', 'externs/phaser/messyActivity-extern.js',
 
     '--externs', 'externs/prettify-externs.js',

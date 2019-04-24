@@ -58,7 +58,7 @@
 
   // Load the chosen language pack.
   var script = document.createElement('script');
-  var debug = true;
+  var debug = false;
   // try {
   //   debug = !!sessionStorage.getItem('debug');
   //   if (debug) {

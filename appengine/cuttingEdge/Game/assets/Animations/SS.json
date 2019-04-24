@@ -1,0 +1,188 @@
+{
+	"textures": [
+		{
+			"image": "SS.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1530,
+				"h": 688
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "lvl1/b",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1024,
+						"h": 686
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1024,
+						"h": 686
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 1024,
+						"h": 686
+					}
+				},
+				{
+					"filename": "cart",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 323,
+						"h": 335
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 323,
+						"h": 335
+					},
+					"frame": {
+						"x": 1027,
+						"y": 1,
+						"w": 323,
+						"h": 335
+					}
+				},
+				{
+					"filename": "bcr",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 68,
+						"h": 105
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 68,
+						"h": 105
+					},
+					"frame": {
+						"x": 1352,
+						"y": 1,
+						"w": 68,
+						"h": 105
+					}
+				},
+				{
+					"filename": "UI/btnHelp",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 54,
+						"w": 250,
+						"h": 92
+					},
+					"frame": {
+						"x": 1027,
+						"y": 338,
+						"w": 250,
+						"h": 92
+					}
+				},
+				{
+					"filename": "UI/btnNextLevel",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 54,
+						"w": 250,
+						"h": 92
+					},
+					"frame": {
+						"x": 1279,
+						"y": 338,
+						"w": 250,
+						"h": 92
+					}
+				},
+				{
+					"filename": "UI/btnRestart",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 54,
+						"w": 250,
+						"h": 92
+					},
+					"frame": {
+						"x": 1027,
+						"y": 432,
+						"w": 250,
+						"h": 92
+					}
+				},
+				{
+					"filename": "UI/btnStart",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 54,
+						"w": 250,
+						"h": 92
+					},
+					"frame": {
+						"x": 1279,
+						"y": 432,
+						"w": 250,
+						"h": 92
+					}
+				},
+				{
+					"filename": "UI/btnHint",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 250,
+						"h": 200
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 54,
+						"w": 250,
+						"h": 91
+					},
+					"frame": {
+						"x": 1027,
+						"y": 526,
+						"w": 250,
+						"h": 91
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:f943fe45754ecd3ceb3bc12e0bdd8662:6a72ed8355c581f404ffa519e8148556:e677cdfec232806e62388ccb3d7164e2$"
+	}
+}

@@ -463,6 +463,9 @@ BlocklyDialogs.gasesGameStart = function () {
         BlocklyDialogs.congratulationsKeyDown, true);
 
     document.getElementById('dialogDoneText').textContent = '';
+
+
+
 };
 
 BlocklyDialogs.gasesGameClose = function () {
@@ -470,7 +473,7 @@ BlocklyDialogs.gasesGameClose = function () {
     BlocklyGames.workspace.getAudioManager().play('ins2', 1);
     setTimeout(function () {
         BlocklyGames.workspace.getAudioManager().play('ins4', 1);
-    }, 9000);
+    }, 7500);
 
 };
 

@@ -103,6 +103,15 @@ Blockly.Blocks['gases_turn'] = {
     this.setPreviousStatement(true);
     this.setNextStatement(true);
     this.setTooltip(BlocklyGames.getMsg('Gases_turnTooltip'));
+  },
+  getDirection(){
+    var direction = this.getFieldValue('DIR');
+    if (direction==='turnLeft'){
+      return 'left';
+    }
+    else{
+      return 'right';
+    }
   }
 };
 

@@ -200,7 +200,7 @@ button:hover:not(:disabled) {
 #startButton {
     min-width: 20px;
     display: None;
-    position: absolute;
+    position: fixed;
     left: 42%;
     top: 44%;
     background-color: #adadad;
@@ -227,4 +227,6 @@ button:hover:not(:disabled) {
     height: 100%;
     z-index: 1;
     position: fixed;
+    top: 0;
+    left: 0;
 }
